@@ -8,41 +8,77 @@
 }
 body {
   font-family: "Albert Sans";
+
+}
+header {
   font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-}
-.header {
-  position: relative;
   display: flex;
+  height: 94px;
+ 
 }
 
+h2 {
+    font-size: 48px; 
+    font-weight: 500;
+    padding: 10px;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width:100%;
+
+    
+}
 .navbar {
-  display: inline-flex;
+  display: flex;
+  flex-grow: 1;
   background-color: var(--brandGreen);
+  height: 100%;
 }
 
-.navbar li {
+.navbar ul {
   display: flex;
+  gap: 70px;
+  align-items: center;
+}
+.navbar li {
+    list-style-type: none;
+}
+.navbar a {
+  display: flex;
+  gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar li img {
+  width: 14px;
 }
 
 .tickets {
   background-color: #2a2a2a;
-  color: #fff;
+  text-transform: uppercase;
+  padding: 32px 16px;
 }
 
 .language {
   background-color: #545454;
-  color: #fff;
+  text-transform: uppercase;
+  padding: 32px 16px;
 }
+
 .header-logo {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
+  min-width: 194px;
+  top: 0px;
+  right: 0px;
   z-index: 1;
 }
 
@@ -50,16 +86,25 @@ body {
   width: 97px;
 }
 
-.image-container {
-    position: relative;
-}
-.top-image {
-    position: relative;
-    width: 100%;
+.hero {
+  position: relative;
 }
 
-.image-overlay {
+.top-image {
+    width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.image-arrow {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
 }
