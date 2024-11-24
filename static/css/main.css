@@ -22,10 +22,10 @@ h2 {
     padding: 60px;
 }
 
-h3 {
+/* h3 {
     color: #fff;
     font-size: 2rem;
-}
+} */
 .bg-green {
     background-color: var(--brandGreen);
 }
@@ -61,10 +61,10 @@ h3 {
   gap: 10px;
 }
 
-a {
+/* a {
     text-decoration: none;
     color: #fff;
-}
+} */
 
 .navbar li img {
   width: 14px;
@@ -120,28 +120,5 @@ a {
     width: 50px;
 }
 
-.agenda {
-    display: flex;
-}
 
-.agenda-item {
-    max-width: 50%;
-}
 
-.agenda-item-text{
-    color: #FFF;
-    padding: 30px 120px;
-}
-
-.agenda .schedule {
-font-size: 1.5rem;
-font-weight: 400;
-letter-spacing: 1.2px;
-
-}
-
-.black-arrow {
-    display: inline-block;
-    margin-left: 30px;
-    margin-right: 10px;
-}
