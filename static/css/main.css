@@ -8,7 +8,6 @@
 }
 body {
   font-family: "Albert Sans";
-
 }
 header {
   font-size: 24px;
@@ -19,8 +18,20 @@ header {
 
 h2 {
     font-size: 48px; 
-    font-weight: 500;
-    padding: 10px;
+    font-weight: 300;
+    padding: 60px;
+}
+
+h3 {
+    color: #fff;
+    font-size: 2rem;
+}
+.bg-green {
+    background-color: var(--brandGreen);
+}
+
+.bg-red {
+    background-color: var(--brandRed);
 }
 .navigation {
     display: flex;
@@ -107,4 +118,30 @@ a {
     bottom: 30px;
     right: 30px;
     width: 50px;
+}
+
+.agenda {
+    display: flex;
+}
+
+.agenda-item {
+    max-width: 50%;
+}
+
+.agenda-item-text{
+    color: #FFF;
+    padding: 30px 120px;
+}
+
+.agenda .schedule {
+font-size: 1.5rem;
+font-weight: 400;
+letter-spacing: 1.2px;
+
+}
+
+.black-arrow {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 10px;
 }
