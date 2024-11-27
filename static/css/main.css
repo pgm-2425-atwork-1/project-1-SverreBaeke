@@ -1,6 +1,6 @@
 :root {
   --brandGreen: #008855;
-  --brandRed: #ff5000;
+  --orange: #ff5000;
   --brandYellow: #e5e470;
   --brandBlue: #46aaea;
   --brandSalmon: #f9c5a5;
@@ -30,8 +30,8 @@ h2 {
     background-color: var(--brandGreen);
 }
 
-.bg-red {
-    background-color: var(--brandRed);
+.bg-orange {
+    background-color: var(--orange);
 }
 .navigation {
     display: flex;
@@ -101,7 +101,7 @@ h2 {
   position: relative;
 }
 
-.top-image {
+.main-image {
     width: 100%;
   position: relative;
   object-fit: cover;
