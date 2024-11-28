@@ -16,183 +16,186 @@
 </head>
 
 <body>
-    <header>
-        <section class="navigation">
-            <nav class="navbar">
-                <ul>
-                    <li>
-                        <a href="#agenda">Agenda<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="history.html">Historiek<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="visit.html">Bezoek<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="about.html">Over het STAM<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                </ul>
-            </nav>
-            <div>
-                <a class="tickets" href="#">koop <br> tickets</a>
-                <a class="language" href="#">nl</a>
-            </div>
-            <div class="navigation__logo">
-                <a href="index.html">
-                    <img src="static/images/logo-vlak.svg" alt="logo stam">
-                    <img class="sub-logo" src="static/images/erfgoedcel-logo-wit.svg" alt="erfgoedcel-logo">
-                </a>
-            </div>
-        </section>
+    <header class="site__header">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#agenda">Agenda<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="history.html">Historiek<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="visit.html">Bezoek<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="about.html">Over het STAM<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <a class="action" href="#">koop <br>tickets</a>
+            <a class="action action--grey" href="#">nl</a>
+        </div>
+        <div class="site__header__logo">
+            <a href="index.html"><img src="static/images/logo-vlak.svg" alt="logo stam"></a>
+            <a href="index.html"><img class="sub-logo" src="static/images/erfgoedcel-logo-wit.svg" alt="erfgoedcel logo"></a>
+        </div>
     </header>
 
     <main>
-        <section class="hero">
-            <img class="main-image" src="static/images/stam-museum.png" alt="stam museum">
-            <img class="image-text" src="static/images/stadsmuseum-gent.svg" alt="stads museum tekst">
-            <img class="image-arrow" src="static/images/arrow-down.svg" alt="pijl beneden">
+        <section class="image__overlay__container">
+            <img class="hero__image" src="static/images/stam-museum.jpeg" alt="stam museum">
+            <img class="image__overlay hero__text" src="static/images/stadsmuseum-gent.svg" alt="stads museum tekst">
+            <img class="image__overlay hero__arrow" src="static/images/arrow-down.svg" alt="pijl beneden">
         </section>
 
         <section id="agenda">
-            <h1>Agenda</h1>
-            <div class="agenda">
-                <article class="agenda__item article article--primary bg-orange">
-                    <img src="static/images/stam-museum-binnen.png" alt="binnenkant stam museum">
-                    <h3><a class="card__link" href="#">Het verhaal van Gent</a></h3>
-                    <p class="schedule">permanent</p>
-                    <p class="agenda-item-text">
-                        Kom naar het STAM en ontdek 'Het verhaal van Gent', de vaste tentoonstelling. Loop over de
-                        gigantische luchtfoto, zie en voel de stad groeien en veranderen van vorm, ontdek unieke
-                        objecten,
-                        ga op in digitale animaties en verdwaal in muurbrede kaarten.
-                    </p>
-                </article>  
+            <h2>Agenda</h2>
+            <div class="articles__container">
+                <article class="agenda__item agenda__item--secondary">
+                    <img class="agenda__image" src="static/images/stam-museum-binnen.png" alt="binnenkant stam museum">
+                    <div class="article__content article__content--primary">
+                        <h3><a class="card__link" href="#">Het verhaal van Gent</a></h3>
+                        <p class="article__schedule">permanent</p>
+                        <p class="agenda__item__text">
+                            Kom naar het STAM en ontdek 'Het verhaal van Gent', de vaste tentoonstelling. Loop over de
+                            gigantische luchtfoto, zie en voel de stad groeien en veranderen van vorm, ontdek unieke
+                            objecten,
+                            ga op in digitale animaties en verdwaal in muurbrede kaarten.
+                        </p>
+                </div>
+                </article>
 
-                <article class="agenda-item bg-green">
-                    <div>
-                        <img src="static/images/de-poorten.png" alt="Meisje in steeg">
-                        <img src="static/images/label_2-nl-be.svg">
+                <article class="agenda__item agenda__item--primary">
+                    <div class="image__overlay__container">
+                        <img class="agenda__image" src="static/images/de-poorten.png" alt="Meisje in steeg">
+                        <img class="image__overlay image__overlay--agenda" src="static/images/label_2-nl-be.svg">
                     </div>
-                    <h3><a class="card__link" href="#">De Poorten - Op ‘t randje van de stad</a></h3>
-                    <p class="schedule">29.11.2024 <br> <img class="black-arrow"
-                            src="static/images/arrow-corner-bottom.svg" alt="">31.08.2025</p>
-
-                    <p class="agenda-item-text">
-                        Eeuwenlang kwam je de stad binnen via gigantische poorten. Vandaag vind je precies op die
-                        plaatsen
-                        dynamische en kleurrijke stadswijken.
-                        Wat gebeurde hier de afgelopen twee eeuwen? Hoe werd de stad hier gevormd en hertekend? De
-                        meest
-                        besproken delen van de stad nemen in deze expo zelf het woord. Op 't randje van de stad,
-                        maar
-                        centraal in deze expo.
-                    </p>
+                    <div class="article__content article__content--secondary">
+                        <h3><a class="card__link" href="#">De Poorten - Op ‘t randje van de stad</a></h3>
+                        <p class="article__schedule">29.11.2024 </p> 
+                        <div class="wrapper">
+                            <img src="static/images/arrow-corner-bottom.svg" alt="">
+                            <p class="article__schedule">31.08.2025</p>  
+                        </div>
+                        <p class="agenda__item__text">
+                            Eeuwenlang kwam je de stad binnen via gigantische poorten. Vandaag vind je precies op die
+                            plaatsen
+                            dynamische en kleurrijke stadswijken.
+                            Wat gebeurde hier de afgelopen twee eeuwen? Hoe werd de stad hier gevormd en hertekend? De
+                            meest
+                            besproken delen van de stad nemen in deze expo zelf het woord. Op 't randje van de stad,
+                            maar
+                            centraal in deze expo.
+                        </p>
+                    </div>
                 </article>
             </div>
 
             <section>
                 <h2>Uitgelicht</h2>
                 <div>
-                        <article>
-                            <div>
-                                <img src="static/images/oude-slagerij.png" alt="Oude slagerij">
-                                <h3><a class="card__link" href="#">Avondrondleiding 'Honger naar Gent'</a></h3>
-                            </div>
-                            <p>
-                                Leer 'Het verhaal van Gent' kennen vanuit het perspectief van spijs en drank. Want niks
-                                brengt
-                                ons dichter bij de Gentenaren die hier ooit leefden, werkten, aten en dronken. En dat op
-                                Late
-                                Donderdag in november!
-                            </p>
-                        </article>
+                    <article>
+                        <div>
+                            <img src="static/images/oude-slagerij.png" alt="Oude slagerij">
+                            <h3><a class="card__link" href="#">Avondrondleiding 'Honger naar Gent'</a></h3>
+                        </div>
+                        <p>
+                            Leer 'Het verhaal van Gent' kennen vanuit het perspectief van spijs en drank. Want niks
+                            brengt
+                            ons dichter bij de Gentenaren die hier ooit leefden, werkten, aten en dronken. En dat op
+                            Late
+                            Donderdag in november!
+                        </p>
+                    </article>
 
-                        <article>
-                            <div>
-                                <img src="static/images/kunstdag.png" alt="Oude slagerij">
-                                <h3><a class="card__link" href="#">Kunstendag voor Kinderen: STAMstudio 'Mijn straf stuk'</a></h3>
-                            </div>
-                            <p>
-                                Kom op Kunstendag voor Kinderen dit jaar langs in het STAM en ga de creatieve toer op in
-                                onze
-                                STAMstudio. Tijdens de workshop 'Mijn straf stuk' voor kinderen tussen 9 en 12 jaar tank
-                                je
-                                inspiratie in het museum en steek je de handen uit de mouwen.
-                            </p>
-                        </article>
+                    <article>
+                        <div>
+                            <img src="static/images/kunstdag.png" alt="Oude slagerij">
+                            <h3><a class="card__link" href="#">Kunstendag voor Kinderen: STAMstudio 'Mijn straf
+                                    stuk'</a></h3>
+                        </div>
+                        <p>
+                            Kom op Kunstendag voor Kinderen dit jaar langs in het STAM en ga de creatieve toer op in
+                            onze
+                            STAMstudio. Tijdens de workshop 'Mijn straf stuk' voor kinderen tussen 9 en 12 jaar tank
+                            je
+                            inspiratie in het museum en steek je de handen uit de mouwen.
+                        </p>
+                    </article>
                 </div>
             </section>
 
             <section>
-                    <article>
-                        <div>
-                            <img src="static/images/familie-atelier.png" alt="Meisje in atelier">
-                            <img src="static/images/vlieg.svg" alt="vlieg icon">
-                        </div>
-                        <h3><a class="card__link" href="#">Open familieatelier: Wat als ...</a></h3>
-                        <p>permanent</p>
-                        <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
-                            bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
-                            slag!
-                        </p>
-                    </article>
+                <article>
+                    <div>
+                        <img src="static/images/familie-atelier.png" alt="Meisje in atelier">
+                        <img src="static/images/vlieg.svg" alt="vlieg icon">
+                    </div>
+                    <h3><a class="card__link" href="#">Open familieatelier: Wat als ...</a></h3>
+                    <p>permanent</p>
+                    <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
+                        bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
+                        slag!
+                    </p>
+                </article>
 
-                    <article>
-                        <div>
-                            <img src="static/images/rat.png" alt="Rat met vergrootglas">
-                            <img src="static/images/vlieg.svg" alt="vlieg icon">
-                        </div>
-                        <h3><a class="card__link" href="#">Luisterspel 'Santé m'n Ratje'</a></h3>
-                        <p>permanent</p>
-                        <p>Ontdek alle bochtjes en gaatjes van 'Het verhaal van Gent' met het luisterspel 'Santé m'n
-                            Ratje'.
-                            Luister en speel samen met Ratje in het STAM, ideaal voor kinderen van 4 t.e.m. 9 jaar.</p>
-                    </article>
+                <article>
+                    <div>
+                        <img src="static/images/rat.png" alt="Rat met vergrootglas">
+                        <img src="static/images/vlieg.svg" alt="vlieg icon">
+                    </div>
+                    <h3><a class="card__link" href="#">Luisterspel 'Santé m'n Ratje'</a></h3>
+                    <p>permanent</p>
+                    <p>Ontdek alle bochtjes en gaatjes van 'Het verhaal van Gent' met het luisterspel 'Santé m'n
+                        Ratje'.
+                        Luister en speel samen met Ratje in het STAM, ideaal voor kinderen van 4 t.e.m. 9 jaar.</p>
+                </article>
 
-                    <article>
-                        <div>
-                            <img src="static/images/kinderspoor.png" alt="Meisje bouwt in atelier">
-                            <img src="static/images/vlieg.svg" alt="vlieg icon">
-                        </div>
-                        <h3><a href="#">Kinderspoor door 'Het verhaal van Gent'</a></h3>
-                        <p>permanent</p>
-                        <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
-                            bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
-                            slag!
-                        </p>
-                    </article>
+                <article>
+                    <div>
+                        <img src="static/images/kinderspoor.png" alt="Meisje bouwt in atelier">
+                        <img src="static/images/vlieg.svg" alt="vlieg icon">
+                    </div>
+                    <h3><a href="#">Kinderspoor door 'Het verhaal van Gent'</a></h3>
+                    <p>permanent</p>
+                    <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
+                        bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
+                        slag!
+                    </p>
+                </article>
 
-                    <article>
-                        <div>
-                            <img src="static/images/turkse-migratie.png" alt="Turks koppel">
-                        </div>
-                        <h3><a class="card__link" href="exhibition.html">Wie bewaart, die blijft! Koru ve yaşat!</a></h3>
-                        <p>21.04.2024 <img src="static/images/arrow-corner-bottom.svg" alt="">30.12.2024</p>
-                        <p>Zestig jaar geleden kwam de Turkse migratie naar Gent op gang. Vandaag heeft bijna een tiende
-                            van
-                            de
-                            Gentenaren Turkse roots. Jongeren uit de Turkse diaspora gingen op zoek naar de verhalen,
-                            voorwerpen
-                            en betekenissen achter die cijfers. 'Wie bewaart, die vindt! Koru ve yașat!', een sneak peek
-                            van
-                            een
-                            groeiende Gents-Turkse erfgoedcollectie.</p>
-                    </article>
+                <article>
+                    <div>
+                        <img src="static/images/turkse-migratie.png" alt="Turks koppel">
+                    </div>
+                    <h3><a class="card__link" href="exhibition.html">Wie bewaart, die blijft! Koru ve yaşat!</a></h3>
+                    <p>21.04.2024 <img src="static/images/arrow-corner-bottom.svg" alt="">30.12.2024</p>
+                    <p>Zestig jaar geleden kwam de Turkse migratie naar Gent op gang. Vandaag heeft bijna een tiende
+                        van
+                        de
+                        Gentenaren Turkse roots. Jongeren uit de Turkse diaspora gingen op zoek naar de verhalen,
+                        voorwerpen
+                        en betekenissen achter die cijfers. 'Wie bewaart, die vindt! Koru ve yașat!', een sneak peek
+                        van
+                        een
+                        groeiende Gents-Turkse erfgoedcollectie.</p>
+                </article>
 
-                    <article>
-                        <div>
-                            <img src="static/images/stamplein.png" alt="stamplein">
-                        </div>
-                        <h3><a class="card__link" href="#">STAMplein: De vierkante kilometer - Dampoort</a></h3>
-                        <p>03.05.2024 <img src="static/images/arrow-corner-bottom.svg" alt="">09.03.2025</p>
-                        <p>Het STAMplein is een gratis stukje museum met een wisselende programmatie. Ontdek er de
-                            schatten
-                            van
-                            de vijfde aflevering van het erfgoedproject 'De vierkante kilometer' waarbij Dampoort
-                            uitgelicht
-                            wordt.</p>
-                    </article>
+                <article>
+                    <div>
+                        <img src="static/images/stamplein.png" alt="stamplein">
+                    </div>
+                    <h3><a class="card__link" href="#">STAMplein: De vierkante kilometer - Dampoort</a></h3>
+                    <p>03.05.2024 <img src="static/images/arrow-corner-bottom.svg" alt="">09.03.2025</p>
+                    <p>Het STAMplein is een gratis stukje museum met een wisselende programmatie. Ontdek er de
+                        schatten
+                        van
+                        de vijfde aflevering van het erfgoedproject 'De vierkante kilometer' waarbij Dampoort
+                        uitgelicht
+                        wordt.</p>
+                </article>
             </section>
         </section>
 
@@ -245,7 +248,7 @@
         <img src="static/images/erfgoedcel-logo-wit.svg" alt="erfgoedcel logo">
         <div>
             <p>made by</p>
-            <a href="#"><img src="static/images/glue.svg" alt="glue logo"></a>
+            <a href="https://glue.be/" target="_blank"><img src="static/images/glue.svg" alt="glue logo"></a>
         </div>
     </footer>
 </body>
