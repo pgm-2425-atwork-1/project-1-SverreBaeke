@@ -37,6 +37,18 @@ a {
   color: var(--septenaryColor);
   text-decoration: none;
 }
+
+.primary__text__color {
+  color: var(--senaryColor);
+}
+
+.secondary__text__color {
+  color: var(--septenaryColor);
+}
+
+.tertiary__text__color {
+  color: var(--primaryColor);
+}
 /* Website header / Navigation
 =========================================== */
 .site__header {
@@ -102,6 +114,8 @@ a {
   min-width: 194px;
 }
 
+/* Top image
+======================================== */
 .hero__text {
   bottom: 30px;
   left: 30px;
@@ -113,6 +127,8 @@ a {
   width: 50px;
 }
 
+/* Agenda section
+========================================== */
 .articles__container {
   display: flex;
 }
@@ -159,9 +175,8 @@ a {
 
 }
 
-.agenda__item__text {
+.article__item__text {
   font-family: Roboto;
-  color: var(--septenaryColor);
   font-size: 19px;
   font-weight: 400;
   line-height: 140%;
@@ -171,6 +186,94 @@ a {
   gap: 8px;
   margin-left: 40px
 }
+
+/* Uitgelicht section
+================================== */
+.uitgelicht {
+  margin: 0 auto;
+  max-width: 1340px;
+}
+.uitgelicht__item {
+  background-color: var(--tertiaryColor);
+
+}
+.uitgelicht__item__primary {
+  padding: 32px 32px 32px 64px;
+}
+.uitgelicht__item__secondary {
+  padding: 32px 64px 32px 32px;
+  border-left: 1px solid black;
+}
+.uitgelicht a{
+  color: var(--senaryColor);
+}
+.uitgelicht__item p {
+  margin-top: 24px;
+}
+.item__header {
+  display: flex;
+  gap: 32px;
+}
+
+/* events styling
+================================= */
+.events__container {
+  margin: 60px auto 120px;
+  flex-wrap: wrap;
+  max-width: 1272px;
+}
+
+.event__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-basis: 26.5rem;
+  border-color: var(--senaryColor);
+  border-width: 1px;
+  padding: 16px;
+}
+
+.event__item a {
+  color: var(--senaryColor);
+}
+.event__item__primary {
+  border-style: solid none solid;
+}
+.event__item__secondary {
+  border-style: solid solid
+}
+
+.event__item__tertiary {
+  border-style: none solid;
+}
+
+.--event__overlay {
+  top: 32px;
+  left: 32px;
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/* footer styling
+====================================== */
+
+.footer-top {
+  display: flex;
+}
+
+.footer-top h2 {
+font-size: 33px;
+font-weight: 500;
+line-height: 12
+}
+
+.footer-bottom {
+  display: flex;
+}
+
 /* .black-arrow {
   width: 14px;
 } */
