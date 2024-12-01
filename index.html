@@ -18,7 +18,7 @@
 <body>
     <header class="site__header">
         <nav class="navbar">
-            <ul>
+            <ul class="list-flex">
                 <li>
                     <a href="#agenda">Agenda<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
@@ -215,10 +215,11 @@
         </section>
     </main>
 
-    <footer class="footer__wrapper">
+    <footer class="footer-wrapper">
         <div class="footer-top">
-            <a href="index.html"><img src="static/images/logo.svg" alt="logo STAM"></a>
-            <article>
+            <a href="index.html"><img class="footer-top__logo" src="static/images/logo.svg" alt="logo STAM"></a>
+
+            <article class="footer-top__item">
                 <h2>Stadsmuseum Gent</h2>
                 <ul>
                     <li>Bijlokesite</li>
@@ -226,44 +227,49 @@
                     <li>09 267 14 00</li>
                     <li>info@stamgent.be</li>
                 </ul>
-                <div>
+                <div class="wrapper wrapper__footer">
                     <a href="#"><img src="static/images/logo-vlaanderen.png" alt="logo vlaanderen"></a>
                     <a href="#"><img src="static/images/logo-gent.png" alt="logo gent"></a>
                 </div>
             </article>
 
-            <article>
+            <article class="footer-top__item">
                 <h2>mis geen nieuwtjes</h2>
-                <a href="#">Schrijf je in op de nieuwsbrief</a>
-                <ul>
-                    <li><a href="#"><img src="static/images/facebook.svg" alt="facebook logo"></a></li>
-                    <li><a href="#"><img src="static/images/twitter.svg" alt="twitter logo"></a></li>
-                    <li><a href="#"><img src="static/images/instagram.svg" alt="instagram logo"></a></li>
-                    <li><a href="#"><img src="static/images/youtube.svg" alt="youtube logo"></a></li>
-                    <li><a href="#"><img src="static/images/linkedin.svg" alt="linkedin logo"></a></li>
+                <a class="footer-top__button" href="#">Schrijf je in op de nieuwsbrief</a>
+                <ul class="list-flex">
+                    <li><a href="#"><img class="image-border" src="static/images/facebook.svg" alt="facebook logo"></a>
+                    </li>
+                    <li><a href="#"><img class="image-border" src="static/images/twitter.svg" alt="twitter logo"></a>
+                    </li>
+                    <li><a href="#"><img class="image-border" src="static/images/instagram.svg"
+                                alt="instagram logo"></a></li>
+                    <li><a href="#"><img class="image-border" src="static/images/youtube.svg" alt="youtube logo"></a>
+                    </li>
+                    <li><a href="#"><img class="image-border" src="static/images/linkedin.svg" alt="linkedin logo"></a>
+                    </li>
                 </ul>
-                <ul>
-                    <li><a href="#">Nederlands</a></li>
-                    <!-- <li>/</li> -->
-                    <li><a href="#">Français</a></li>
-                    <!-- <li>/</li> -->
+                <ul class="list-flex">
+                    <li><a class="text-underline" href="#">Nederlands</a></li>
+                    <li><a class="slashes" href="#">Français</a></li>
                     <li><a href="#">English</a></li>
                 </ul>
             </article>
         </div>
 
         <div class="footer-bottom">
-            <ul>
-                <li>© STAM alle rechten voorbehouden</li>
-                <li><a href="#">Privacybeleid</a></li>
-                <li><a href="#">Colofon</a></li>
-                <li><a href="#">Disclaimer</a></li>
-                <li><a href="#">Algemene voorwaarden & bewaking</a></li>
-            </ul>
-            <img src="static/images/erfgoedcel-logo-wit.svg" alt="erfgoedcel logo">
-            <div>
-                <p>made by</p>
-                <a href="https://glue.be/" target="_blank"><img src="static/images/glue.svg" alt="glue logo"></a>
+            <div class="footer-bottom__content">
+                <p>© STAM alle rechten voorbehouden</p>
+                <ul class="list-flex">
+                    <li><a href="#">Privacybeleid</a></li>
+                    <li><a href="#">Colofon</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Algemene voorwaarden & bewaking</a></li>
+                </ul>
+                <img src="static/images/heritage_logo_rotated.svg" alt="erfgoedcel logo">
+                <div class="wrapper">
+                    <p>made by</p>
+                    <a href="https://glue.be/" target="_blank"><img src="static/images/glue.svg" alt="glue logo"></a>
+                </div>
             </div>
         </div>
     </footer>
