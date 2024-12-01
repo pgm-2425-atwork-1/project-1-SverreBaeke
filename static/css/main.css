@@ -7,7 +7,9 @@
   --senaryColor: #2a2a2a;
   --septenaryColor: #fff;
 }
-
+html {
+  scroll-behavior: smooth
+}
 body {
   font-family: "Albert Sans";
 }
