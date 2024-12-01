@@ -214,11 +214,37 @@ content: ' / ';
   bottom: 30px;
   left: 30px;
 }
+@media (max-width: 1175px) {
+ .hero__text {
+  display: none;
+ }
+}
+
+.hero__image {
+  min-width: 570px;
+}
 
 .hero__arrow {
   bottom: 30px;
   right: 30px;
   width: 50px;
+}
+@media (max-width: 1175px) {
+  .hero__arrow {
+    width: 20px;
+  }
+}
+
+.hero__text--secondary {
+  display: none;
+  bottom: 30px;
+  left: 30px;
+}
+@media (max-width: 1175px) {
+  .hero__text--secondary {
+    display: block;
+    flex-shrink: 2;
+}
 }
 
 /* Agenda section
