@@ -51,8 +51,10 @@
         <section class="image__overlay__container">
             <img class="hero__image" src="static/images/stam-museum.jpeg" alt="stam museum">
             <img class="image__overlay hero__text" src="static/images/stadsmuseum-gent.svg" alt="stads museum tekst">
-            <img class="image__overlay hero__text--secondary" src="static/images/stadsmuseum-gent-small.svg" alt="stads museum tekst">
-            <a class="image__overlay hero__arrow"  href="#agenda"><img class="hero__arrow" src="static/images/arrow-down.svg" alt=""></a>
+            <img class="image__overlay hero__text--secondary" src="static/images/stadsmuseum-gent-small.svg"
+                alt="stads museum tekst">
+            <a class="image__overlay hero__arrow" href="#agenda"><img class="hero__arrow"
+                    src="static/images/arrow-down.svg" alt=""></a>
         </section>
 
         <section id="agenda">
@@ -139,12 +141,12 @@
                     <img class="event__item__image" src="static/images/familie-atelier.png" alt="Meisje in atelier">
                     <img class="image__overlay --event__overlay" src="static/images/vlieg.svg" alt="vlieg icon">
                 </div>
-                    <h3><a class="card__link" href="#">Open familieatelier: Wat als ...</a></h3>
-                    <p class="article__schedule tertiary__text__color">permanent</p>
-                    <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
-                        bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
-                        slag!
-                    </p>
+                <h3><a class="card__link" href="#">Open familieatelier: Wat als ...</a></h3>
+                <p class="article__schedule tertiary__text__color">permanent</p>
+                <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
+                    bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
+                    slag!
+                </p>
             </article>
 
             <article class="event__item">
@@ -221,7 +223,7 @@
 
     <footer class="footer-wrapper">
         <div class="footer-top">
-            <a href="index.html"><img class="footer-top__logo" src="static/images/logo.svg" alt="logo STAM"></a>
+            <a class="hidden" href="index.html"><img class="footer-top__logo" src="static/images/logo.svg" alt="logo STAM"></a>
 
             <article class="footer-top__item">
                 <h2>Stadsmuseum Gent</h2>
@@ -240,18 +242,25 @@
             <article class="footer-top__item">
                 <h2>mis geen nieuwtjes</h2>
                 <a class="footer-top__button" href="#">Schrijf je in op de nieuwsbrief</a>
-                <ul class="list-flex">
-                    <li><a href="#"><img class="image-border" src="static/images/facebook.svg" alt="facebook logo"></a>
-                    </li>
-                    <li><a href="#"><img class="image-border" src="static/images/twitter.svg" alt="twitter logo"></a>
-                    </li>
-                    <li><a href="#"><img class="image-border" src="static/images/instagram.svg"
-                                alt="instagram logo"></a></li>
-                    <li><a href="#"><img class="image-border" src="static/images/youtube.svg" alt="youtube logo"></a>
-                    </li>
-                    <li><a href="#"><img class="image-border" src="static/images/linkedin.svg" alt="linkedin logo"></a>
-                    </li>
-                </ul>
+                <div class="test">
+                    <a href="index.html"><img class="footer-item__logo" src="static/images/logo.svg" alt="logo STAM"></a>
+                    <ul class="list-flex">
+                        <li><a href="#"><img class="image-border" src="static/images/facebook.svg"
+                                    alt="facebook logo"></a>
+                        </li>
+                        <li><a href="#"><img class="image-border" src="static/images/twitter.svg"
+                                    alt="twitter logo"></a>
+                        </li>
+                        <li><a href="#"><img class="image-border" src="static/images/instagram.svg"
+                                    alt="instagram logo"></a></li>
+                        <li><a href="#"><img class="image-border" src="static/images/youtube.svg"
+                                    alt="youtube logo"></a>
+                        </li>
+                        <li><a href="#"><img class="image-border" src="static/images/linkedin.svg"
+                                    alt="linkedin logo"></a>
+                        </li>
+                    </ul>
+                </div>
                 <ul class="list-flex">
                     <li><a class="text-underline" href="#">Nederlands</a></li>
                     <li><a class="slashes" href="#">Français</a></li>
@@ -263,16 +272,19 @@
         <div class="footer-bottom">
             <div class="footer-bottom__content">
                 <p>© STAM alle rechten voorbehouden</p>
-                <ul class="list-flex">
+                <ul class="footer__list">
                     <li><a href="#">Privacybeleid</a></li>
                     <li><a href="#">Colofon</a></li>
                     <li><a href="#">Disclaimer</a></li>
                     <li><a href="#">Algemene voorwaarden & bewaking</a></li>
                 </ul>
-                <img src="static/images/heritage_logo_rotated.svg" alt="erfgoedcel logo">
-                <div class="wrapper">
-                    <p>made by</p>
-                    <a href="https://glue.be/" target="_blank"><img src="static/images/glue.svg" alt="glue logo"></a>
+                <div class="footer__bottom__wrapper">
+                    <img src="static/images/heritage_logo_rotated.svg" alt="erfgoedcel logo">
+                    <div class="wrapper">
+                        <p>made by</p>
+                        <a href="https://glue.be/" target="_blank"><img src="static/images/glue.svg"
+                                alt="glue logo"></a>
+                    </div>
                 </div>
             </div>
         </div>
