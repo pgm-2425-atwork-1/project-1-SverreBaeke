@@ -1,4 +1,5 @@
-
+/* General elements styling
+====================================== */
 
 .container-flex {
   display: flex;
@@ -70,7 +71,7 @@ content: ' / ';
 
 .article__text {
   font-family: Roboto;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-weight: 400;
   line-height: 140%;
 }
@@ -306,12 +307,19 @@ content: ' / ';
   gap: 16px;
 }
 
+
+
 .agenda__content--primary {
   padding: 32px 32px 32px 120px;
 }
 .agenda__content--secondary {
   padding: 32px 120px 32px 32px;
+}
 
+@media (max-width: 799px) {
+  .agenda__content {
+    padding: 32px
+  }
 }
 
 
@@ -497,7 +505,7 @@ content: ' / ';
 }
 
 .footer__title {
-font-size: 33px;
+font-size: 2.0625rem;
 font-weight: 500;
 line-height: 124%;
 padding: 0;

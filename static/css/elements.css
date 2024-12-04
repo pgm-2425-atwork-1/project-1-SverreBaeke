@@ -19,7 +19,7 @@ h2 {
   font-size: 3rem;
   font-weight: 400;
 }
-@media (max-width: 415px) {
+@media (max-width: 454px) {
   h2 {
     padding: 40px 60px;
   }
