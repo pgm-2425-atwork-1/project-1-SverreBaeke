@@ -236,12 +236,12 @@ content: ' / ';
 }
 
 .hero {
-  height: 739px;
+  height: 90vh;
 }
 
 @media (max-width: 768px) {
   .hero {
-    height: 767px;
+    height: 95vh;
   }
 }
 .hero__image {
