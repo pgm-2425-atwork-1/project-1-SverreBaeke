@@ -8,7 +8,7 @@
   --septenaryColor: #fff;
 }
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Albert Sans";
@@ -235,8 +235,20 @@ content: ' / ';
  }
 }
 
+.hero {
+  height: 739px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 767px;
+  }
+}
 .hero__image {
-  min-width: 570px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 20% 50%;
 }
 
 .hero__arrow {
