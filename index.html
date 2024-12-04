@@ -16,33 +16,33 @@
 </head>
 
 <body>
-    <header class="site__header">
-        <nav class="navbar">
-            <ul class="list-flex">
-                <li>
-                    <a href="#agenda">Agenda<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
+    <header class="header">
+        <nav class="header__navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#agenda">Agenda<img class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
-                <li>
-                    <a href="history.html">Historiek<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="history.html">Historiek<img class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
-                <li>
-                    <a href="visit.html">Bezoek<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="visit.html">Bezoek<img class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
-                <li>
-                    <a href="about.html">Over het STAM<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="about.html">Over het STAM<img class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
             </ul>
         </nav>
-        <nav class="nav-menu">
+        <nav class="navbar--hamburger">
             <img src="static/images/hamburger.svg" alt="">
         </nav>
 
-        <a class="action" href="#">koop <br>tickets</a>
-        <a class="action action--grey" href="#">nl</a>
+        <a class="action action--primary" href="#">koop <br>tickets</a>
+        <a class="action action--secondary" href="#">nl</a>
 
-        <div class="site__header__logo">
-            <a href="index.html"><img src="static/images/logo-vlak.svg" alt="logo stam"></a>
-            <a href="index.html"><img class="sub-logo" src="static/images/erfgoedcel-logo-wit.svg"
+        <div class="header__logo">
+            <a href="index.html"><img class="logo__image" src="static/images/logo-vlak.svg" alt="logo stam"></a>
+            <a href="index.html"><img class="logo__image logo__image--sub" src="static/images/erfgoedcel-logo-wit.svg"
                     alt="erfgoedcel logo"></a>
         </div>
     </header>
@@ -65,7 +65,7 @@
                     <div class="article__content article__content--primary">
                         <h3><a class="card__link" href="#">Het verhaal van Gent</a></h3>
                         <p class="article__schedule">permanent</p>
-                        <p class="article__item__text secondary__text__color">
+                        <p class="article__item__text text__color--secondary">
                             Kom naar het STAM en ontdek 'Het verhaal van Gent', de vaste tentoonstelling. Loop over de
                             gigantische luchtfoto, zie en voel de stad groeien en veranderen van vorm, ontdek unieke
                             objecten,
@@ -86,7 +86,7 @@
                             <img src="static/images/arrow-black.svg" alt="">
                             <p class="article__schedule">31.08.2025</p>
                         </div>
-                        <p class="article__item__text secondary__text__color">
+                        <p class="article__item__text text__color--secondary">
                             Eeuwenlang kwam je de stad binnen via gigantische poorten. Vandaag vind je precies op die
                             plaatsen
                             dynamische en kleurrijke stadswijken.
@@ -109,7 +109,7 @@
                         <img src="static/images/oude-slagerij.jpeg" alt="Oude slagerij">
                         <h3><a class="card__link" href="#">Avondrondleiding 'Honger naar Gent'</a></h3>
                     </header>
-                    <p class="article__item__text primary__text__color">
+                    <p class="article__item__text text__color--primary">
                         Leer 'Het verhaal van Gent' kennen vanuit het perspectief van spijs en drank. Want niks
                         brengt
                         ons dichter bij de Gentenaren die hier ooit leefden, werkten, aten en dronken. En dat op
@@ -124,7 +124,7 @@
                         <h3><a class="card__link" href="#">Kunstendag voor Kinderen: STAMstudio 'Mijn straf
                                 stuk'</a></h3>
                     </header>
-                    <p class="article__item__text primary__text__color">
+                    <p class="article__item__text text__color--primary">
                         Kom op Kunstendag voor Kinderen dit jaar langs in het STAM en ga de creatieve toer op in
                         onze
                         STAMstudio. Tijdens de workshop 'Mijn straf stuk' voor kinderen tussen 9 en 12 jaar tank
@@ -142,7 +142,7 @@
                     <img class="image__overlay --event__overlay" src="static/images/vlieg.svg" alt="vlieg icon">
                 </div>
                 <h3><a class="card__link" href="#">Open familieatelier: Wat als ...</a></h3>
-                <p class="article__schedule tertiary__text__color">permanent</p>
+                <p class="article__schedule text__color--tertiary">permanent</p>
                 <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
                     bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
                     slag!
@@ -155,7 +155,7 @@
                     <img class="image__overlay --event__overlay" src="static/images/vlieg.svg" alt="vlieg icon">
                 </div>
                 <h3><a class="card__link" href="#">Luisterspel 'Santé m'n Ratje'</a></h3>
-                <p class="article__schedule tertiary__text__color">permanent</p>
+                <p class="article__schedule text__color--tertiary">permanent</p>
                 <p>Ontdek alle bochtjes en gaatjes van 'Het verhaal van Gent' met het luisterspel 'Santé m'n
                     Ratje'.
                     Luister en speel samen met Ratje in het STAM, ideaal voor kinderen van 4 t.e.m. 9 jaar.</p>
@@ -167,7 +167,7 @@
                     <img class="image__overlay --event__overlay" src="static/images/vlieg.svg" alt="vlieg icon">
                 </div>
                 <h3><a href="#">Kinderspoor door 'Het verhaal van Gent'</a></h3>
-                <p class="article__schedule tertiary__text__color">permanent</p>
+                <p class="article__schedule text__color--tertiary">permanent</p>
                 <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
                     bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
                     slag!
@@ -179,7 +179,7 @@
                     <img class="event__item__image" src="static/images/turkse-migratie.png" alt="Turks koppel">
                 </div>
                 <h3><a class="card__link" href="exhibition.html">Wie bewaart, die blijft! Koru ve yaşat!</a></h3>
-                <div class="article__schedule tertiary__text__color">
+                <div class="article__schedule text__color--tertiary">
                     <p>21.04.2024</p>
                     <div class="wrapper">
                         <img src="static/images/arrow-green.svg" alt="">
@@ -202,7 +202,7 @@
                     <img class="event__item__image" src="static/images/stamplein.png" alt="stamplein">
                 </div>
                 <h3><a class="card__link" href="#">STAMplein: De vierkante kilometer - Dampoort</a></h3>
-                <div class="article__schedule tertiary__text__color">
+                <div class="article__schedule text__color--tertiary">
                     <p>03.05.2024</p>
                     <div class="wrapper">
                         <img src="static/images/arrow-green.svg" alt="">
