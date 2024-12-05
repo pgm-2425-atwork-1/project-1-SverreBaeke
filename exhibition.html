@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,nofollow">
-    <title>STAM | Evenementen</title>
+    <title>STAM | Stadsmuseum Gent</title>
     <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/elements.css">
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,34 +18,38 @@
 
 <body>
 
-    <header>
-        <section class="navigation">
-            <nav class="navbar">
-                <ul>
-                    <li>
-                        <a href="index.html#agenda">Agenda<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="history.html">Historiek<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
+    <header class="header">
+        <nav class="header__navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#agenda">Agenda<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="history.html">Historiek<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="visit.html">Bezoek<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="about.html">Over het STAM<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar--hamburger">
+            <img src="static/images/hamburger.svg" alt="">
+        </nav>
 
-                    </li>
-                    <li>
-                        <a href="visit.html">Bezoek<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="about.html">Over het STAM<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                </ul>
-            </nav>
-            <a class="tickets" href="#">koop <br> tickets</a>
-            <a class="language" href="#">nl</a>
-        </section>
+        <a class="action action--primary" href="#">koop <br>tickets</a>
+        <a class="action action--secondary" href="#">nl</a>
 
-        <div class="header-logo">
-            <a href="index.html">
-                <img src="static/images/logo-vlak.svg" alt="logo stam">
-                <img class="sub-logo" src="static/images/erfgoedcel-logo-wit.svg" alt="erfgoedcel-logo">
-            </a>
+        <div class="header__logo-container">
+            <a href="index.html"><img class="header__logo-img" src="static/images/logo-vlak.svg" alt="logo stam"></a>
+            <a href="index.html"><img class="header__logo-img header__logo-img--sub"
+                    src="static/images/erfgoedcel-logo-wit.svg" alt="erfgoedcel logo"></a>
         </div>
     </header>
 
@@ -104,38 +109,47 @@
         <section>
             <h2>nu ook in het STAM</h2>
             <div>
-                    <article>
-                        <div>
-                            <img src="static/images/familie-atelier.png" alt="Meisje in atelier">
-                            <img src="static/images/vlieg.svg" alt="vlieg icon">
+                <section class="container-flex events__container">
+                    <article class="event__item">
+                        <div class="image__overlay__container">
+                            <img class="event__item__image" src="static/images/familie-atelier.png"
+                                alt="Meisje in atelier">
+                            <img class="image__overlay --event__overlay" src="static/images/vlieg.svg" alt="vlieg icon">
                         </div>
-                        <h3><a class="card__link" href="#">Open familieatelier: Wat als ...</a></h3>
-                        <p>permanent</p>
+                        <h3><a class="article__link" href="#">Open familieatelier: Wat als ...</a></h3>
+                        <p class="article__schedule text__color--tertiary">permanent</p>
                         <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
                             bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
                             slag!
                         </p>
                     </article>
 
-                    <article>
-                        <div>
-                            <img src="static/images/kinderspoor.png" alt="Meisje bouwt in atelier">
-                            <img src="static/images/vlieg.svg" alt="vlieg icon">
+                    <article class="event__item">
+                        <div class="image__overlay__container">
+                            <img class="event__item__image" src="static/images/kinderspoor.png"
+                                alt="Meisje bouwt in atelier">
+                            <img class="image__overlay --event__overlay" src="static/images/vlieg.svg" alt="vlieg icon">
                         </div>
-                        <h3><a class="card__link" href="#">Kinderspoor door 'Het verhaal van Gent'</a></h3>
-                        <p>permanent</p>
+                        <h3><a href="#">Kinderspoor door 'Het verhaal van Gent'</a></h3>
+                        <p class="article__schedule text__color--tertiary">permanent</p>
                         <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
                             bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
                             slag!
                         </p>
                     </article>
 
-                    <article>
+                    <article class="event__item event__item--secondary">
                         <div>
-                            <img src="static/images/stamplein.png" alt="stamplein">
+                            <img class="event__item__image" src="static/images/stamplein.png" alt="stamplein">
                         </div>
-                        <h3><a class="card__link" href="#">STAMplein: De vierkante kilometer - Dampoort</a></h3>
-                        <p>03.05.2024 <img src="static/images/arrow-corner-bottom.svg" alt="">09.03.2025</p>
+                        <h3><a class="article__link" href="#">STAMplein: De vierkante kilometer - Dampoort</a></h3>
+                        <div class="article__schedule text__color--tertiary">
+                            <p>03.05.2024</p>
+                            <div class="wrapper">
+                                <img src="static/images/arrow-green.svg" alt="">
+                                <p>09.03.2024</p>
+                            </div>
+                        </div>
                         <p>Het STAMplein is een gratis stukje museum met een wisselende programmatie. Ontdek er de
                             schatten
                             van
@@ -147,54 +161,75 @@
         </section>
     </main>
 
-    <footer class="footer-top">
-        <a href="index.html"><img src="static/images/logo.svg" alt="logo STAM"></a>
-        <article>
-            <h2>Stadsmuseum Gent</h2>
-            <ul>
-                <li>Bijlokesite</li>
-                <li>Godshuizenlaan 2 - 9000 Gent</li>
-                <li>09 267 14 00</li>
-                <li>info@stamgent.be</li>
-            </ul>
-            <div>
-                <a href="#"><img src="static/images/logo-vlaanderen.png" alt="logo vlaanderen"></a>
-                <a href="#"><img src="static/images/logo-gent.png" alt="logo gent"></a>
+    <footer class="footer">
+        <div class="footer__top">
+            <a class="hidden" href="index.html"><img class="footer__top__logo" src="static/images/logo.svg"
+                    alt="logo STAM"></a>
+
+            <article class="footer__item">
+                <h2 class="footer__title">Stadsmuseum Gent</h2>
+                <ul>
+                    <li>Bijlokesite</li>
+                    <li>Godshuizenlaan 2 - 9000 Gent</li>
+                    <li>09 267 14 00</li>
+                    <li>info@stamgent.be</li>
+                </ul>
+                <div class="wrapper wrapper--footer__top">
+                    <a href="#"><img src="static/images/logo-vlaanderen.png" alt="logo vlaanderen"></a>
+                    <a href="#"><img src="static/images/logo-gent.png" alt="logo gent"></a>
+                </div>
+            </article>
+
+            <article class="footer__item">
+                <h2 class="footer__title">mis geen nieuwtjes</h2>
+                <a class="footer__button" href="#">Schrijf je in op de nieuwsbrief</a>
+                <div class="footer__socials">
+                    <a href="index.html"><img class="footer__item__logo" src="static/images/logo.svg"
+                            alt="logo STAM"></a>
+                    <ul class="list-flex">
+                        <li><a href="#"><img class="image-border" src="static/images/facebook.svg"
+                                    alt="facebook logo"></a>
+                        </li>
+                        <li><a href="#"><img class="image-border" src="static/images/twitter.svg"
+                                    alt="twitter logo"></a>
+                        </li>
+                        <li><a href="#"><img class="image-border" src="static/images/instagram.svg"
+                                    alt="instagram logo"></a></li>
+                        <li><a href="#"><img class="image-border" src="static/images/youtube.svg"
+                                    alt="youtube logo"></a>
+                        </li>
+                        <li><a href="#"><img class="image-border" src="static/images/linkedin.svg"
+                                    alt="linkedin logo"></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="list-flex">
+                    <li><a class="footer__link text-underline" href="#">Nederlands</a></li>
+                    <li><a class="footer__link slashes" href="#">Français</a></li>
+                    <li><a class="footer__link" href="#">English</a></li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__bottom__content">
+                <p class="footer__bottom__text">© STAM alle rechten voorbehouden</p>
+                <ul class="footer__list">
+                    <li><a href="#">Privacybeleid</a></li>
+                    <li><a href="#">Colofon</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Algemene voorwaarden & bewaking</a></li>
+                </ul>
+                <div class="footer__bottom__wrapper">
+                    <img class="footer__bottom__img" src="static/images/heritage_logo_rotated.svg"
+                        alt="erfgoedcel logo">
+                    <div class="wrapper">
+                        <p class="footer__bottom__text">made by</p>
+                        <a href="https://glue.be/" target="_blank"><img class="footer__bottom__img"
+                                src="static/images/glue.svg" alt="glue logo"></a>
+                    </div>
+                </div>
             </div>
-        </article>
-
-        <article>
-            <h2>mis geen nieuwtjes</h2>
-            <a href="#">Schrijf je in op de nieuwsbrief</a>
-            <ul>
-                <li><a href="#"><img src="static/images/facebook.svg" alt="facebook logo"></a></li>
-                <li><a href="#"><img src="static/images/twitter.svg" alt="twitter logo"></a></li>
-                <li><a href="#"><img src="static/images/instagram.svg" alt="instagram logo"></a></li>
-                <li><a href="#"><img src="static/images/youtube.svg" alt="youtube logo"></a></li>
-                <li><a href="#"><img src="static/images/linkedin.svg" alt="linkedin logo"></a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Nederlands</a></li>
-                <li>/</li>
-                <li><a href="#">Français</a></li>
-                <li>/</li>
-                <li><a href="#">English</a></li>
-            </ul>
-        </article>
-    </footer>
-
-    <footer class="footer-bottom">
-        <ul>
-            <li>© STAM alle rechten voorbehouden</li>
-            <li><a href="#">Privacybeleid</a></li>
-            <li><a href="#">Colofon</a></li>
-            <li><a href="#">Disclaimer</a></li>
-            <li><a href="#">Algemene voorwaarden & bewaking</a></li>
-        </ul>
-        <img src="static/images/erfgoedcel-logo-wit.svg" alt="erfgoedcel logo">
-        <div>
-            <p>made by</p>
-            <a href="#"><img src="static/images/glue.svg" alt="glue logo"></a>
         </div>
     </footer>
 

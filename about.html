@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,nofollow">
-    <title>STAM | Wat is het STAM?</title>
+    <title>STAM | Stadsmuseum Gent</title>
     <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/elements.css">
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,62 +18,69 @@
 
 <body>
 
-    <header>
-        <section class="navigation">
-            <nav class="navbar">
-                <ul>
-                    <li>
-                        <a href="index.html#agenda">Agenda<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="history.html">Historiek<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
+    <header class="header">
+        <nav class="header__navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="index.html#agenda">Agenda<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="history.html">Historiek<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="visit.html">Bezoek<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="about.html">Over het STAM<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar--hamburger">
+            <img src="static/images/hamburger.svg" alt="">
+        </nav>
 
-                    </li>
-                    <li>
-                        <a href="visit.html">Bezoek<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="about.html">Over het STAM<img src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                </ul>
-            </nav>
-            <a class="tickets" href="#">koop <br> tickets</a>
-            <a class="language" href="#">nl</a>
-        </section>
+        <a class="action action--primary" href="#">koop <br>tickets</a>
+        <a class="action action--secondary" href="#">nl</a>
 
-        <div class="header-logo">
-            <a href="index.html">
-                <img src="static/images/logo-vlak.svg" alt="logo stam">
-                <img class="sub-logo" src="static/images/erfgoedcel-logo-wit.svg" alt="erfgoedcel-logo">
-            </a>
+        <div class="header__logo-container">
+            <a href="index.html"><img class="header__logo-img" src="static/images/logo-vlak.svg" alt="logo stam"></a>
+            <a href="index.html"><img class="header__logo-img header__logo-img--sub"
+                    src="static/images/erfgoedcel-logo-wit.svg" alt="erfgoedcel logo"></a>
         </div>
     </header>
 
-    <main>
+    <main class="about__container">
         <section>
             <h1>Wat is het STAM?</h1>
-            <img src="static/images/stam-museum2.png" alt="STAM-museum buitenkant">
-            <p>
+            <img class="about__image" src="static/images/stam-museum2.png" alt="STAM-museum buitenkant">
+            <p class="article__text">
                 Het STAM is het Gentse stadsmuseum dat het verhaal van Gent brengt en je (nog) warm(er) maakt voor de
                 stad. Je ontdekt er de vele lagen van Gent, een hedendaagse stad met een eeuwenoude geschiedenis.
             </p>
 
-            <p>
+            <p class="article__text">
                 De vaste tentoonstelling 'Het verhaal van Gent' vertrekt bij een enorme luchtfoto van Gent van vandaag
                 en neemt je mee langs een chronologisch parcours van objecten en multimedia. Je voelt de ontwikkeling en
                 groei van Gent. Passeert de revue: alles wat Gent tot Gent maakt en wat Gent tot een stad maakt.
             </p>
 
-            <p>
+            <p class="article__text">
                 Maar het STAM gaat breder dan Gent alleen en vraagt zich ook af wat een stad tot een stad maakt. Die
                 vraag zit vervat in 'Het verhaal van Gent', in projecten zoals 
-                <a href="https://stamgent.be/nl_be/over-het-stam/erfgoed-in-gent/de-vierkante-kilometer"> Devierkantekilometer</a> 
+                <a class="article__link--primary" target="__blank"
+                    href="https://stamgent.be/nl_be/over-het-stam/erfgoed-in-gent/de-vierkante-kilometer"> De vierkante
+                    kilometer</a> 
                 en in onze tijdelijke 
-                <a href="https://stamgent.be/nl_be/over-het-stam/erfgoed-in-gent/de-vierkante-kilometer">tentoonstellingen</a>.
+                <a class="article__link--primary" target="__blank"
+                    href="https://stamgent.be/nl_be/tentoonstellingen">tentoonstellingen</a>.
             </p>
 
-            <img src="static/images/gent-projected.png" alt="Projectie van de stad Gent">
-            <p>
+            <img class="about__image" src="static/images/gent-projected.png" alt="Projectie van de stad Gent">
+            <p class="article__text">
                 Wat het STAM anders maakt, is dat het echte topstuk zich niet tussen de muren van het museum bevindt.
                 Dat topstuk is Gent zelf en een bezoek aan het Stadsmuseum is niet volledig zonder een bezoek aan de
                 stad.
@@ -81,15 +89,16 @@
 
         <section>
             <h3>Missie</h3>
-            <p>
+            <p class="article__text">
                 Het STAM verkent als museum wat Gent tot Gent maakt, en de stad tot stad. We verbinden mensen van
                 vandaag met de geschiedenis en kijken naar de toekomst van de stad. Vanuit het STAM betrekken we
                 bewoners, bezoekers en fans van de stad en gaan we gul partnerschappen aan.
             </p>
 
-            <p>
+            <p class="article__text">
                 Sla de strategische en operationele doelstellingen van het STAM erop na, in de samenvatting van ons 
-                <a href="https://stamgent.be/volumes/general/2024.04.09-Beleidsplansamenvatting-2024-2028.pdf?v=1713181364">
+                <a class="article__link--primary" target="__blank"
+                    href="https://stamgent.be/volumes/general/2024.04.09-Beleidsplansamenvatting-2024-2028.pdf?v=1713181364">
                     beleidsplan 2024-2028
                 </a>.
             </p>
@@ -97,106 +106,133 @@
 
         <section>
             <h3>Voor wie?</h3>
-            <p>Voor iedereen die Gent (beter) wil leren kennen...</p>
+            <p class="article__text">Voor iedereen die Gent (beter) wil leren kennen...</p>
             <ul>
-                <li>
+                <li class="article__text">
                     Voor bezoekers die één of meerdere dagen in Gent verblijven, is de vaste tentoonstelling 'Het
                     verhaal van Gent' de perfecte kennismaking met want Gent tot Gent maakt/heeft gemaakt, een ideaal
                     aanknopingspunt voor een culturele en/of toeristische verkenning van Gent.
                 </li>
-                <li>
+                <li class="article__text">
                     Voor wie Gent al min of meer kent, betekent het STAM een nieuwe invalshoek, met de vaste
                     tentoonstelling als basis en de tijdelijke tentoonstellingen als extra impulsen.
                 </li>
-                <li>
+                <li class="article__text">
                     Voor Gentenaars die deel willen uitmaken van een stad die trots is op haar culturele erfgoed en er
                     op een actieve manier mee omgaat, is het STAM een open huis dat uitnodigt om deel te nemen aan
                     allerhande activiteiten.
                 </li>
             </ul>
-            <img src="static/images/abdijrefter.png" alt="Abdijrefter">
+            <img class="about__image" src="static/images/abdijrefter.png" alt="Abdijrefter">
         </section>
 
         <section>
-            <article>
-                <div>
-                    <h3>Kwaliteitslabel</h3>
-                    <img src="static/images/plus.svg" alt="">
-                </div>
-                <p>
+            <details>
+                <summary>Kwaliteitslabel </summary>
+                <p class="article__text">
                     In 2012 kreeg het STAM van de Vlaamse overheid het kwaliteitslabel waardoor het zich een erkende
                     collectiebeherende cultureel-erfgoedorganisatie mag noemen.
                 </p>
-            </article>
+            </details>
 
-            <article>
-                <div>
-                    <h3>In de prijzen</h3>
-                    <img src="static/images/plus.svg" alt="">
+            <details>
+                <summary>In de prijzen</summary>
+                <p class="article__text">
+                    Het STAM werd sinds de opening bekroond met enkele prijzen: de Thuis-in-de-Stad Prijs 2011, de
+                    Vlaamse Monumentenprijs 2011, de Prijs voor Cultuurmanagement voor directeur Christine De Weerdt in
+                    2011, de Vlaamse Museumprijzen 2012 van jury én publiek. Het werd ook genomineerd voor de European
+                    Museum of the Year Award 2013.
+                </p>
+            </details>
+
+            <details>
+                <summary>Bestuurlijk: AGB Erfgoed </summary>
+                <div class="article__text">
+                    <p>
+                        Het STAM maakt samen met Het Huis van Alijn en het Industriemuseum deel uit van het AGB Erfgoed.
+                    </p>
+                    <p>
+                        Het idee om op de Bijloke een volwaardig Gents stadsmuseum in te richten ontstond eind jaren
+                        negentig. In 1997 had het Gentse stadsbestuur de werking van het Oudheidkundig Museum van de Bijloke
+                        om budgettaire redenen teruggeschroefd. Er werd een nieuwe bestemming gezocht voor de collectie en
+                        het bouwkundig patrimonium.
+                    </p>
                 </div>
-            </article>
-
-            <article>
-                <div>
-                    <h3>Bestuurlijk: AGB Erfgoed</h3>
-                    <img src="static/images/plus.svg" alt="">
-                </div>
-            </article>
-
+            </details>
         </section>
     </main>
 
-    <footer class="footer-top">
-        <a href="index.html"><img src="static/images/logo.svg" alt="logo STAM"></a>
-        <article>
-            <h2>Stadsmuseum Gent</h2>
-            <ul>
-                <li>Bijlokesite</li>
-                <li>Godshuizenlaan 2 - 9000 Gent</li>
-                <li>09 267 14 00</li>
-                <li>info@stamgent.be</li>
-            </ul>
-            <div>
-                <a href="#"><img src="static/images/logo-vlaanderen.png" alt="logo vlaanderen"></a>
-                <a href="#"><img src="static/images/logo-gent.png" alt="logo gent"></a>
+    <footer class="footer">
+        <div class="footer__top">
+            <a class="hidden" href="index.html"><img class="footer__top__logo" src="static/images/logo.svg"
+                    alt="logo STAM"></a>
+
+            <article class="footer__item">
+                <h2 class="footer__title">Stadsmuseum Gent</h2>
+                <ul>
+                    <li>Bijlokesite</li>
+                    <li>Godshuizenlaan 2 - 9000 Gent</li>
+                    <li>09 267 14 00</li>
+                    <li>info@stamgent.be</li>
+                </ul>
+                <div class="wrapper wrapper--footer__top">
+                    <a href="#"><img src="static/images/logo-vlaanderen.png" alt="logo vlaanderen"></a>
+                    <a href="#"><img src="static/images/logo-gent.png" alt="logo gent"></a>
+                </div>
+            </article>
+
+            <article class="footer__item">
+                <h2 class="footer__title">mis geen nieuwtjes</h2>
+                <a class="footer__button" href="#">Schrijf je in op de nieuwsbrief</a>
+                <div class="footer__socials">
+                    <a href="index.html"><img class="footer__item__logo" src="static/images/logo.svg"
+                            alt="logo STAM"></a>
+                    <ul class="list-flex">
+                        <li><a href="#"><img class="image-border" src="static/images/facebook.svg"
+                                    alt="facebook logo"></a>
+                        </li>
+                        <li><a href="#"><img class="image-border" src="static/images/twitter.svg"
+                                    alt="twitter logo"></a>
+                        </li>
+                        <li><a href="#"><img class="image-border" src="static/images/instagram.svg"
+                                    alt="instagram logo"></a></li>
+                        <li><a href="#"><img class="image-border" src="static/images/youtube.svg"
+                                    alt="youtube logo"></a>
+                        </li>
+                        <li><a href="#"><img class="image-border" src="static/images/linkedin.svg"
+                                    alt="linkedin logo"></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="list-flex">
+                    <li><a class="footer__link text-underline" href="#">Nederlands</a></li>
+                    <li><a class="footer__link slashes" href="#">Français</a></li>
+                    <li><a class="footer__link" href="#">English</a></li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__bottom__content">
+                <p class="footer__bottom__text">© STAM alle rechten voorbehouden</p>
+                <ul class="footer__list">
+                    <li><a href="#">Privacybeleid</a></li>
+                    <li><a href="#">Colofon</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Algemene voorwaarden & bewaking</a></li>
+                </ul>
+                <div class="footer__bottom__wrapper">
+                    <img class="footer__bottom__img" src="static/images/heritage_logo_rotated.svg"
+                        alt="erfgoedcel logo">
+                    <div class="wrapper">
+                        <p class="footer__bottom__text">made by</p>
+                        <a href="https://glue.be/" target="_blank"><img class="footer__bottom__img"
+                                src="static/images/glue.svg" alt="glue logo"></a>
+                    </div>
+                </div>
             </div>
-        </article>
-
-        <article>
-            <h2>mis geen nieuwtjes</h2>
-            <a href="#">Schrijf je in op de nieuwsbrief</a>
-            <ul>
-                <li><a href="#"><img src="static/images/facebook.svg" alt="facebook logo"></a></li>
-                <li><a href="#"><img src="static/images/twitter.svg" alt="twitter logo"></a></li>
-                <li><a href="#"><img src="static/images/instagram.svg" alt="instagram logo"></a></li>
-                <li><a href="#"><img src="static/images/youtube.svg" alt="youtube logo"></a></li>
-                <li><a href="#"><img src="static/images/linkedin.svg" alt="linkedin logo"></a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Nederlands</a></li>
-                <li>/</li>
-                <li><a href="#">Français</a></li>
-                <li>/</li>
-                <li><a href="#">English</a></li>
-            </ul>
-        </article>
-    </footer>
-
-    <footer class="footer-bottom">
-        <ul>
-            <li>© STAM alle rechten voorbehouden</li>
-            <li><a href="#">Privacybeleid</a></li>
-            <li><a href="#">Colofon</a></li>
-            <li><a href="#">Disclaimer</a></li>
-            <li><a href="#">Algemene voorwaarden & bewaking</a></li>
-        </ul>
-        <img src="static/images/erfgoedcel-logo-wit.svg" alt="erfgoedcel logo">
-        <div>
-            <p>made by</p>
-            <a href="#"><img src="static/images/glue.svg" alt="glue logo"></a>
         </div>
     </footer>
-
 </body>
 
 </html>

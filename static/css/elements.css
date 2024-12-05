@@ -14,7 +14,13 @@ body {
   font-family: "Albert Sans";
 }
 
-h2 {
+h1 {
+font-size: 3.75rem;
+font-weight: 400;
+line-height: 100%;
+}
+
+h2,summary {
   padding: 80px 120px;
   font-size: 3rem;
   font-weight: 400;
@@ -23,6 +29,25 @@ h2 {
   h2 {
     padding: 40px 60px;
   }
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-top: 1px solid black;
+}
+
+summary::after {
+  text-align: center;
+  content:"+";
+  color: #46AAEA;
+  transition: 0.3s;
+  transform-origin: center;
+}
+
+details[open] > summary::after {
+  transform: rotate(45deg) 
 }
 
 h3 {
