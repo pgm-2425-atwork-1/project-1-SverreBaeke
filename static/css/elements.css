@@ -12,6 +12,7 @@ html {
 }
 body {
   font-family: "Albert Sans";
+  font-size: 19px;
 }
 
 h1 {
@@ -67,4 +68,12 @@ li {
 a {
   color: var(--septenaryColor);
   text-decoration: none;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
