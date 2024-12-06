@@ -468,11 +468,6 @@
   border-radius: 50%;
 }
 
-@media (max-width: 639px) {
-  .dummy {
-    display: none;
-  }
-}
 /* footer styling
 ====================================== */
 .footer__link {
@@ -529,7 +524,7 @@
 }
 
 @media (min-width: 767px) {
-  .hidden {
+  .show {
     display: block;
   }
 }

@@ -1,14 +1,6 @@
 const $hamburger = document.getElementById("hamburger");
 const $dropdownContainer = document.getElementById("dropdown-container");
 
-// function makeHamburgerHTML () {
-//     return `
-
-//     `;
-// }
-
-// $dropdownContainer.innerHTML = makeHamburgerHTML()
-
 $hamburger.addEventListener("click", () => {
     if(!$dropdownContainer.classList.contains("toggle")){
         $dropdownContainer.classList.add("toggle")
