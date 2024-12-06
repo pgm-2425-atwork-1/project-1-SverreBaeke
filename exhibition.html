@@ -22,26 +22,50 @@
         <nav class="header__navbar navbar--secondary">
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a class="navbar__link link--secondary" href="#agenda">Agenda<img class="navbar__link-icon"
-                            src="static/images/arrow-black.svg" alt=""></a>
+                    <a class="navbar__link" href="exhibition.html">Agenda<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link link--secondary" href="history.html">Historiek<img class="navbar__link-icon"
-                            src="static/images/arrow-black.svg" alt=""></a>
+                    <a class="navbar__link" href="history.html">Historiek<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link link--secondary" href="visit.html">Bezoek<img class="navbar__link-icon"
-                            src="static/images/arrow-black.svg" alt=""></a>
+                    <a class="navbar__link" href="visit.html">Bezoek<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link link--secondary" href="about.html">Over het STAM<img
-                            class="navbar__link-icon" src="static/images/arrow-black.svg" alt=""></a>
+                    <a class="navbar__link" href="about.html">Over het STAM<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
             </ul>
         </nav>
         <nav class="navbar-hamburger navbar--secondary">
-            <img src="static/images/hamburger.svg" alt="">
+            <img src="static/images/hamburger.svg" alt="" id="hamburger">
         </nav>
+        <div class="dropdown-container" id="dropdown-container">
+            <nav class="hamburger-dropdown hamburger-dropdown--primary">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a class="navbar__link navbar__link--hamburger" href="exhibition.html">Agenda<img
+                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link navbar__link--hamburger" href="history.html">Historiek<img
+                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link navbar__link--hamburger" href="visit.html">Bezoek<img
+                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link navbar__link--hamburger" href="about.html">Over het stam<img
+                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="filler"></div>
+            <button type="button" class="hamburger-button" id="hamburger-button">+</button>
+        </div>
 
         <a class="action action--primary" href="#">koop <br>tickets</a>
         <a class="action action--secondary" href="#">nl</a>
@@ -55,7 +79,7 @@
     <main class="content-container--exhibition">
         <section class="exhibition">
             <header class="exhibition__header">
-                <a class="container-flex--gap link--secondary navbar__link" href="#agenda"><img
+                <a class="container-flex--gap link--secondary navbar__link" href="index.html#agenda"><img
                         src="static/images/arrow-corner-top.svg" alt="">Agenda</a>
                 <h1>Wie bewaart, die blijft! Koru ve yaşat! </h1>
                 <p class="article__schedule text__color--tertiary container-flex--gap">29.11.2024 <img
@@ -238,7 +262,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>

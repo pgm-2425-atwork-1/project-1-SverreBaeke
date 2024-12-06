@@ -22,7 +22,7 @@
         <nav class="header__navbar">
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a class="navbar__link" href="index.html#agenda">Agenda<img class="navbar__link-icon"
+                    <a class="navbar__link" href="exhibition.html">Agenda<img class="navbar__link-icon"
                             src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
                 <li class="navbar__item">
@@ -40,14 +40,39 @@
             </ul>
         </nav>
         <nav class="navbar-hamburger navbar--primary">
-            <img src="static/images/hamburger.svg" alt="">
+            <img src="static/images/hamburger.svg" alt="" id="hamburger">
         </nav>
+        <div class="dropdown-container" id="dropdown-container">
+            <nav class="hamburger-dropdown">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a class="navbar__link navbar__link--hamburger" href="exhibition.html">Agenda<img
+                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link navbar__link--hamburger" href="history.html">Historiek<img
+                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link navbar__link--hamburger" href="visit.html">Bezoek<img
+                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link navbar__link--hamburger" href="about.html">Over het stam<img
+                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="filler"></div>
+            <button type="button" class="hamburger-button" id="hamburger-button">+</button>
+        </div>
 
         <a class="action action--primary" href="#">koop <br>tickets</a>
         <a class="action action--secondary" href="#">nl</a>
 
         <div class="header__logo-container">
-            <a href="index.html"><img class="header__logo-img" src="static/images/logo-vlak-yellow.svg" alt="logo stam"></a>
+            <a href="index.html"><img class="header__logo-img" src="static/images/logo-vlak-yellow.svg"
+                    alt="logo stam"></a>
         </div>
     </header>
 
@@ -151,8 +176,10 @@
                     </p>
                     <p>
                         Het idee om op de Bijloke een volwaardig Gents stadsmuseum in te richten ontstond eind jaren
-                        negentig. In 1997 had het Gentse stadsbestuur de werking van het Oudheidkundig Museum van de Bijloke
-                        om budgettaire redenen teruggeschroefd. Er werd een nieuwe bestemming gezocht voor de collectie en
+                        negentig. In 1997 had het Gentse stadsbestuur de werking van het Oudheidkundig Museum van de
+                        Bijloke
+                        om budgettaire redenen teruggeschroefd. Er werd een nieuwe bestemming gezocht voor de collectie
+                        en
                         het bouwkundig patrimonium.
                     </p>
                 </div>
@@ -231,6 +258,7 @@
             </div>
         </div>
     </footer>
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>

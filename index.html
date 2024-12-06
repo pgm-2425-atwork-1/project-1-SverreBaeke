@@ -21,30 +21,58 @@
         <nav class="header__navbar">
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a class="navbar__link" href="#agenda">Agenda<img class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    <a class="navbar__link" href="exhibition.html">Agenda<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="history.html">Historiek<img class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    <a class="navbar__link" href="history.html">Historiek<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="visit.html">Bezoek<img class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    <a class="navbar__link" href="visit.html">Bezoek<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="about.html">Over het STAM<img class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    <a class="navbar__link" href="about.html">Over het STAM<img class="navbar__link-icon"
+                            src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
             </ul>
         </nav>
         <nav class="navbar-hamburger navbar--primary">
-            <img src="static/images/hamburger.svg" alt="">
+            <img src="static/images/hamburger.svg" alt="" id="hamburger">
         </nav>
+        <div class="dropdown-container" id="dropdown-container">
+            <nav class="hamburger-dropdown">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a class="navbar__link navbar__link--hamburger" href="exhibition.html">Agenda<img
+                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link navbar__link--hamburger" href="history.html">Historiek<img
+                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link navbar__link--hamburger" href="visit.html">Bezoek<img
+                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link navbar__link--hamburger" href="about.html">Over het stam<img
+                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="filler"></div>
+            <button type="button" class="hamburger-button" id="hamburger-button">+</button>
+        </div>
 
         <a class="action action--primary" href="#">koop <br>tickets</a>
         <a class="action action--secondary" href="#">nl</a>
 
         <div class="header__logo-container">
             <a href="index.html"><img class="header__logo-img" src="static/images/logo-vlak.svg" alt="logo stam"></a>
-            <a href="index.html"><img class="header__logo-img header__logo-img--sub" src="static/images/erfgoedcel-logo-wit.svg"
-                    alt="erfgoedcel logo"></a>
+            <a href="index.html"><img class="header__logo-img header__logo-img--sub"
+                    src="static/images/erfgoedcel-logo-wit.svg" alt="erfgoedcel logo"></a>
         </div>
     </header>
 
@@ -222,7 +250,8 @@
 
     <footer class="footer">
         <div class="footer__top">
-            <a class="hidden" href="index.html"><img class="footer__top__logo" src="static/images/logo.svg" alt="logo STAM"></a>
+            <a class="hidden" href="index.html"><img class="footer__top__logo" src="static/images/logo.svg"
+                    alt="logo STAM"></a>
 
             <article class="footer__item">
                 <h2 class="footer__title">Stadsmuseum Gent</h2>
@@ -242,7 +271,8 @@
                 <h2 class="footer__title">mis geen nieuwtjes</h2>
                 <a class="footer__button" href="#">Schrijf je in op de nieuwsbrief</a>
                 <div class="footer__socials">
-                    <a href="index.html"><img class="footer__item__logo" src="static/images/logo.svg" alt="logo STAM"></a>
+                    <a href="index.html"><img class="footer__item__logo" src="static/images/logo.svg"
+                            alt="logo STAM"></a>
                     <ul class="list-flex">
                         <li><a href="#"><img class="image-border" src="static/images/facebook.svg"
                                     alt="facebook logo"></a>
@@ -278,16 +308,18 @@
                     <li><a href="#">Algemene voorwaarden & bewaking</a></li>
                 </ul>
                 <div class="footer__bottom__wrapper">
-                    <img class="footer__bottom__img" src="static/images/heritage_logo_rotated.svg" alt="erfgoedcel logo">
+                    <img class="footer__bottom__img" src="static/images/heritage_logo_rotated.svg"
+                        alt="erfgoedcel logo">
                     <div class="wrapper">
                         <p class="footer__bottom__text">made by</p>
-                        <a href="https://glue.be/" target="_blank"><img class="footer__bottom__img" src="static/images/glue.svg"
-                                alt="glue logo"></a>
+                        <a href="https://glue.be/" target="_blank"><img class="footer__bottom__img"
+                                src="static/images/glue.svg" alt="glue logo"></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>
