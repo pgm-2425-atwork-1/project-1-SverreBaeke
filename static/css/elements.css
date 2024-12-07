@@ -13,6 +13,7 @@ html {
 body {
   font-family: "Albert Sans";
   font-size: 19px;
+  overflow-x: hidden;
 }
 
 h1 {

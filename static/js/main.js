@@ -1,16 +1,25 @@
 const $hamburger = document.getElementById("hamburger");
-const $dropdownContainer = document.getElementById("dropdown-container");
+const $dropdown = document.getElementById("dropdown");
+const $button = document.getElementById("hamburger-button");
+const $main = document.getElementById("main")
+const $filler = document.getElementById("filler")
 
 $hamburger.addEventListener("click", () => {
-    if(!$dropdownContainer.classList.contains("toggle")){
-        $dropdownContainer.classList.add("toggle")
-    }
+    $dropdown.classList.toggle("toggle")
+    $filler.classList.toggle("filler--toggle")
 });
-
-const $button = document.getElementById("hamburger-button");
 
 $button.addEventListener("click", () => {
-    $dropdownContainer.classList.remove("toggle")
+    $dropdown.classList.remove("toggle");
+    $filler.classList.remove("filler--toggle");
 });
+
+$main.addEventListener("click", (event) => {
+    if(event.target !== $dropdown) {
+        $dropdown.classList.remove("toggle")
+        $filler.classList.remove("filler--toggle")
+    }
+})
+
 
 

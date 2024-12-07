@@ -39,32 +39,32 @@
             </ul>
         </nav>
         <nav class="navbar-hamburger navbar--primary">
-            <img src="static/images/hamburger.svg" alt="" id="hamburger">
+            <img class="hamburger-icon" src="static/images/hamburger.svg" alt="" id="hamburger">
         </nav>
-        <div class="dropdown-container" id="dropdown-container">
-            <nav class="hamburger-dropdown">
-                <ul class="navbar__list">
-                    <li class="navbar__item">
-                        <a class="navbar__link navbar__link--hamburger" href="exhibition.html">Agenda<img
-                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar__link navbar__link--hamburger" href="history.html">Historiek<img
-                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar__link navbar__link--hamburger" href="visit.html">Bezoek<img
-                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar__link navbar__link--hamburger" href="about.html">Over het stam<img
-                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="filler"></div>
+
+        <nav id="dropdown" class="hamburger-dropdown">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a class="navbar__link navbar__link--hamburger" href="exhibition.html">Agenda<img
+                            class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link navbar__link--hamburger" href="history.html">Historiek<img
+                            class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link navbar__link--hamburger" href="visit.html">Bezoek<img
+                            class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link navbar__link--hamburger" href="about.html">Over het stam<img
+                            class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
+                </li>
+            </ul>
             <button type="button" class="hamburger-button" id="hamburger-button">+</button>
-        </div>
+        </nav>
+        <div class="filler" id="filler"></div>
+
 
         <a class="action action--primary" href="#">koop <br>tickets</a>
         <a class="action action--secondary" href="#">nl</a>
@@ -76,15 +76,15 @@
         </div>
     </header>
 
-    <main>
-        <section class="hero">
+    <main id="main">
+        <h1 class="hero">
             <img class="hero__image" src="static/images/stam-museum.jpeg" alt="stam museum">
             <img class="hero__overlay-text" src="static/images/stadsmuseum-gent.svg" alt="stads museum tekst">
             <img class="hero__overlay-text--small" src="static/images/stadsmuseum-gent-small.svg"
                 alt="stads museum tekst">
             <a class="image__overlay hero__arrow" href="#agenda"><img class="hero__arrow"
                     src="static/images/arrow-down.svg" alt=""></a>
-        </section>
+        </h1>
 
         <section id="agenda">
             <h2>Agenda</h2>
