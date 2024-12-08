@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="static/css/reset.css">
     <link rel="stylesheet" href="static/css/elements.css">
     <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/header-navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,58 +27,67 @@
     <header class="header">
         <nav class="header__navbar">
             <ul class="navbar__list">
-                <li class="navbar__item">
-                    <a class="navbar__link" href="exhibition.html">Agenda<img class="navbar__link-icon"
+                <li>
+                    <a class="nav-link" href="exhibition.html">Agenda<img class="link-icon"
                             src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="history.html">Historiek<img class="navbar__link-icon"
+                <li>
+                    <a class="nav-link" href="history.html">Historiek<img class="link-icon"
                             src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="visit.html">Bezoek<img class="navbar__link-icon"
+                <li>
+                    <a class="nav-link" href="visit.html">Bezoek<img class="link-icon"
                             src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="about.html">Over het STAM<img class="navbar__link-icon"
+                <li>
+                    <a class="nav-link" href="about.html">Over het STAM<img class="link-icon"
                             src="static/images/arrow-corner-bottom.svg" alt=""></a>
                 </li>
             </ul>
         </nav>
+
         <nav class="navbar-hamburger navbar--primary">
             <img class="hamburger-icon" src="static/images/hamburger.svg" alt="" id="hamburger">
         </nav>
-        <div class="container-flex">
-            <nav id="dropdown" class="hamburger-dropdown">
-                <ul class="navbar__list">
-                    <li class="navbar__item">
-                        <a class="navbar__link navbar__link--hamburger" href="exhibition.html">Agenda<img
-                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar__link navbar__link--hamburger" href="history.html">Historiek<img
-                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar__link navbar__link--hamburger" href="visit.html">Bezoek<img
-                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar__link navbar__link--hamburger" href="about.html">Over het stam<img
-                                class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
-                    </li>
-                </ul>
-                <button type="button" class="hamburger-button" id="hamburger-button">+</button>
-            </nav>
-            <div class="filler" id="filler"></div>
-        </div>
+
+        <nav id="dropdown" class="dropdown">
+            <ul class="dropdown__list">
+                <li>
+                    <a class="nav-link nav-link--dropdown" href="exhibition.html">
+                        Agenda
+                        <img class="link-icon" src="static/images/arrow-corner-bottom.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link nav-link--dropdown" href="history.html">
+                        Historiek
+                        <img class="link-icon" src="static/images/arrow-corner-bottom.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link nav-link--dropdown" href="visit.html">
+                        Bezoek
+                        <img class="link-icon" src="static/images/arrow-corner-bottom.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link nav-link--dropdown" href="about.html">
+                        Over het stam
+                        <img class="link-icon" src="static/images/arrow-corner-bottom.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="dropdown__button" id="dropdown-button">+</button>
+        </nav>       
+        <div class="filler" id="filler"></div>
 
         <a class="action action--primary" href="#">koop <br>tickets</a>
         <a class="action action--secondary" href="#">nl</a>
 
-        <div class="header__logo-container">
-            <a href="index.html"><img class="header__logo-img" src="static/images/logo-vlak-yellow.svg"
-                    alt="logo stam"></a>
+        <div class="header__logo">
+            <a href="index.html">
+                <img class="logo-image" src="static/images/logo-vlak-yellow.svg" alt="logo stam">
+            </a>
         </div>
     </header>
 
@@ -135,17 +145,17 @@
         <section>
             <h3>Voor wie?</h3>
             <p class="article__text">Voor iedereen die Gent (beter) wil leren kennen...</p>
-            <ul>
-                <li class="article__text">
+            <ul class="list">
+                <li class="article__text list-item">
                     Voor bezoekers die één of meerdere dagen in Gent verblijven, is de vaste tentoonstelling 'Het
                     verhaal van Gent' de perfecte kennismaking met want Gent tot Gent maakt/heeft gemaakt, een ideaal
                     aanknopingspunt voor een culturele en/of toeristische verkenning van Gent.
                 </li>
-                <li class="article__text">
+                <li class="article__text list-item">
                     Voor wie Gent al min of meer kent, betekent het STAM een nieuwe invalshoek, met de vaste
                     tentoonstelling als basis en de tijdelijke tentoonstellingen als extra impulsen.
                 </li>
-                <li class="article__text">
+                <li class="article__text list-item">
                     Voor Gentenaars die deel willen uitmaken van een stad die trots is op haar culturele erfgoed en er
                     op een actieve manier mee omgaat, is het STAM een open huis dat uitnodigt om deel te nemen aan
                     allerhande activiteiten.

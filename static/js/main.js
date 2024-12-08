@@ -1,6 +1,6 @@
 const $hamburger = document.getElementById("hamburger");
 const $dropdown = document.getElementById("dropdown");
-const $button = document.getElementById("hamburger-button");
+const $button = document.getElementById("dropdown-button");
 const $main = document.getElementById("main")
 const $filler = document.getElementById("filler")
 

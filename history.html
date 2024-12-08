@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="static/css/reset.css">
     <link rel="stylesheet" href="static/css/elements.css">
     <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/header-navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,65 +26,72 @@
     <header class="header">
         <nav class="header__navbar navbar--tertiary">
             <ul class="navbar__list">
-                <li class="navbar__item">
-                    <a class="navbar__link" href="exhibition.html">Agenda<img class="navbar__link-icon"
+                <li >
+                    <a class="nav-link" href="exhibition.html">Agenda<img class="link-icon"
                             src="static/images/arrow-black.svg" alt=""></a>
                 </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="history.html">Historiek<img class="navbar__link-icon"
+                <li>
+                    <a class="nav-link" href="history.html">Historiek<img class="link-icon"
                             src="static/images/arrow-black.svg" alt=""></a>
                 </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="visit.html">Bezoek<img class="navbar__link-icon"
+                <li>
+                    <a class="nav-link" href="visit.html">Bezoek<img class="link-icon"
                             src="static/images/arrow-black.svg" alt=""></a>
                 </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="about.html">Over het STAM<img class="navbar__link-icon"
+                <li>
+                    <a class="nav-link" href="about.html">Over het STAM<img class="link-icon"
                             src="static/images/arrow-black.svg" alt=""></a>
                 </li>
             </ul>
         </nav>
+
         <nav class="navbar-hamburger navbar--tertiary">
             <img class="hamburger-icon" src="static/images/hamburger-black.svg" alt="" id="hamburger">
         </nav>
-        <div class="container-flex">
-            <nav id="dropdown" class="hamburger-dropdown navbar--tertiary">
-                <ul class="navbar__list">
-                    <li class="navbar__item">
-                        <a class="navbar__link navbar__link--hamburger" href="exhibition.html">Agenda<img
-                                class="navbar__link-icon" src="static/images/arrow-black.svg" alt=""></a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar__link navbar__link--hamburger" href="history.html">Historiek<img
-                                class="navbar__link-icon" src="static/images/arrow-black.svg" alt=""></a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar__link navbar__link--hamburger" href="visit.html">Bezoek<img
-                                class="navbar__link-icon" src="static/images/arrow-black.svg" alt=""></a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar__link navbar__link--hamburger" href="about.html">Over het stam<img
-                                class="navbar__link-icon" src="static/images/arrow-black.svg" alt=""></a>
-                    </li>
-                </ul>
-                <button type="button" class="hamburger-button hamburger-button--secondary"
-                    id="hamburger-button">+</button>
-            </nav>
-            <div class="filler" id="filler"></div>
-        </div>
 
+        <nav id="dropdown" class="dropdown">
+            <ul class="dropdown__list">
+                <li>
+                    <a class="nav-link nav-link--dropdown" href="exhibition.html">
+                        Agenda
+                        <img class="link-icon" src="static/images/arrow-corner-bottom.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link nav-link--dropdown" href="history.html">
+                        Historiek
+                        <img class="link-icon" src="static/images/arrow-corner-bottom.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link nav-link--dropdown" href="visit.html">
+                        Bezoek
+                        <img class="link-icon" src="static/images/arrow-corner-bottom.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link nav-link--dropdown" href="about.html">
+                        Over het stam
+                        <img class="link-icon" src="static/images/arrow-corner-bottom.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="dropdown__button" id="dropdown-button">+</button>
+        </nav
+        <div class="filler" id="filler"></div>
 
         <a class="action action--primary" href="#">koop <br>tickets</a>
         <a class="action action--secondary" href="#">nl</a>
 
-        <div class="header__logo-container">
-            <a href="index.html"><img class="header__logo-img" src="static/images/logo-vlak-green.svg"
-                    alt="logo stam"></a>
+        <div class="header__logo">
+            <a href="index.html">
+                <img class="logo-image" src="static/images/logo-vlak-green.svg" alt="logo stam">
+            </a>
         </div>
     </header>
 
     <main id="main" class="history-main">
-        <aside id="aside" class="sidenav navbar--tertiary">
+        <aside class="sidenav navbar--tertiary">
             <li><a href="#ontstaan">Ontstaan</a></li>
             <li><a href="#groei">Groei</a></li>
             <li><a href="#bloei">Bloei</a></li>
@@ -198,14 +206,14 @@
                         (1884). Ten slotte vond de verzameling een gepast onderkomen in de prachtige gebouwen van de
                         Bijlokeabdij (1928).
                     </p>
+                    <img src="static/images/Bijlokeabdij .png" alt="Bijlokeabdij 1928">
                 </div>
 
-                <img src="static/images/Bijlokeabdij .png" alt="Bijlokeabdij 1928">
             </section>
 
             <section id="vandaag">
                 <h2 class="history-title">Vandaag</h2>
-                <p>
+                <p class="visit-spacing">
                     Op 11 september 2005 ging het Bijlokemuseum dicht, op 9 oktober 2010 opende het STAM-Stadsmuseum
                     Gent.
                     Na meer dan 180 jaar verzamelen, na selecties en heroriënteringen en via uitwisselingen tussen
