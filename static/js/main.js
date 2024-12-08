@@ -19,7 +19,8 @@ $main.addEventListener("click", (event) => {
         $dropdown.classList.remove("toggle")
         $filler.classList.remove("filler--toggle")
     }
-})
+});
+
 
 
 

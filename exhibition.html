@@ -45,10 +45,11 @@
             </ul>
         </nav>
         <nav class="navbar-hamburger navbar--secondary">
-            <img src="static/images/hamburger.svg" alt="" id="hamburger">
+            <img class="hamburger-icon" src="static/images/hamburger.svg" alt="" id="hamburger">
         </nav>
-        <div class="dropdown-container" id="dropdown-container">
-            <nav class="hamburger-dropdown hamburger-dropdown--primary" id="dropdown">
+
+        <div class="container-flex">
+            <nav id="dropdown" class="hamburger-dropdown navbar--secondary">
                 <ul class="navbar__list">
                     <li class="navbar__item">
                         <a class="navbar__link navbar__link--hamburger" href="exhibition.html">Agenda<img
@@ -67,9 +68,9 @@
                                 class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
                     </li>
                 </ul>
+                <button type="button" class="hamburger-button" id="hamburger-button">+</button>
             </nav>
-            <div class="filler"></div>
-            <button type="button" class="hamburger-button" id="hamburger-button">+</button>
+            <div class="filler" id="filler"></div>
         </div>
 
         <a class="action action--primary" href="#">koop <br>tickets</a>
@@ -81,7 +82,7 @@
         </div>
     </header>
 
-    <main class="content-container--exhibition">
+    <main id="main" class="content-container--exhibition">
         <section class="exhibition">
             <header class="exhibition__header">
                 <a class="container-flex--gap link--secondary navbar__link" href="index.html#agenda"><img

@@ -45,10 +45,10 @@
             </ul>
         </nav>
         <nav class="navbar-hamburger navbar--primary">
-            <img src="static/images/hamburger.svg" alt="" id="hamburger">
+            <img class="hamburger-icon" src="static/images/hamburger.svg" alt="" id="hamburger">
         </nav>
-        <div class="dropdown-container" id="dropdown-container">
-            <nav class="hamburger-dropdown">
+        <div class="container-flex">
+            <nav id="dropdown" class="hamburger-dropdown">
                 <ul class="navbar__list">
                     <li class="navbar__item">
                         <a class="navbar__link navbar__link--hamburger" href="exhibition.html">Agenda<img
@@ -67,9 +67,9 @@
                                 class="navbar__link-icon" src="static/images/arrow-corner-bottom.svg" alt=""></a>
                     </li>
                 </ul>
+                <button type="button" class="hamburger-button" id="hamburger-button">+</button>
             </nav>
-            <div class="filler"></div>
-            <button type="button" class="hamburger-button" id="hamburger-button">+</button>
+            <div class="filler" id="filler"></div>
         </div>
 
         <a class="action action--primary" href="#">koop <br>tickets</a>
@@ -81,7 +81,7 @@
         </div>
     </header>
 
-    <main class="content-container--about">
+    <main id="main" class="content-container--about">
         <section>
             <h1>Wat is het STAM?</h1>
             <img class="about__mage" src="static/images/stam-museum2.png" alt="STAM-museum buitenkant">
@@ -107,7 +107,7 @@
                     href="https://stamgent.be/nl_be/tentoonstellingen">tentoonstellingen</a>.
             </p>
 
-            <img class="about-image" src="static/images/gent-projected.png" alt="Projectie van de stad Gent">
+            <img class="image-padding" src="static/images/gent-projected.png" alt="Projectie van de stad Gent">
             <p class="article__text">
                 Wat het STAM anders maakt, is dat het echte topstuk zich niet tussen de muren van het museum bevindt.
                 Dat topstuk is Gent zelf en een bezoek aan het Stadsmuseum is niet volledig zonder een bezoek aan de
@@ -151,7 +151,7 @@
                     allerhande activiteiten.
                 </li>
             </ul>
-            <img class="about-image" src="static/images/abdijrefter.png" alt="Abdijrefter">
+            <img class="image-padding" src="static/images/abdijrefter.png" alt="Abdijrefter">
         </section>
 
         <section>
