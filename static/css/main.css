@@ -1,5 +1,9 @@
 /* General elements styling
 ====================================== */
+.uppercase-text {
+  text-transform: uppercase;
+}
+
 .source {
   margin-top: 40px;
   padding-left: 40px;
@@ -269,8 +273,8 @@ left:0
 
 .hamburger-button {
   position: absolute;
-  top: 8px;
-  left: 5px;
+  top: 32px;
+  left: 7px;
   z-index: 1;
   transform: rotate(45deg);
   font-size: 50px;
@@ -285,8 +289,8 @@ left:0
 
 @media (max-width: 768px) {
   .hamburger-button {
-    top: -14px;
-    left: 5px;
+    top: 11px;
+    left: 7px;
   }
 }
 
@@ -302,8 +306,12 @@ left:0
   background-color: var(--tertiaryColor);
 }
 
-.navbar--tertiary a {
+.navbar--tertiary a, .navbar--quarternary a {
   color: black;
+}
+
+.navbar--quarternary {
+  background-color: var(--quinaryColor)
 }
 
 
@@ -891,5 +899,84 @@ border-right: 1px solid white;
 .sidenav a:hover {
   color: white;
 }
+
+/* Visit styling
+============================= */
+
+.content-container--visit {
+  display: flex;
+  flex-direction: column;
+  max-width: 842px;
+  width: 90%;
+  margin: 80px auto 80px auto;
+  gap: 40px;
+}
+
+
+.content-container--visit h2 {
+  padding: 0;
+}
+
+.visit-header {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+.visit-spacing {
+  margin: 24px 0;
+}
+
+.visit-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+
+.visit-column {
+  flex: 1 1 40%;
+}
+.visit-item {
+  margin-top: 64px;
+  border-top: 1px solid black;
+}
+
+.visit-item:nth-child(1),
+.visit-item:nth-child(4) {
+  margin-top: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%
+}
+
+td:nth-child(even){
+  text-align: right;
+}
+
+td {
+  padding: 8px 0;
+}
+tr:not(:last-child) {
+  border-bottom: 1px solid;
+}
+
+.prize-info {
+  display: block;
+  color: var(--priceInfo);
+}
+
+.price-link {
+  color: var(--priceInfo);
+  text-decoration: underline;
+}
+
+.prize-info-list {
+  padding: 10px;
+}
+
 
 

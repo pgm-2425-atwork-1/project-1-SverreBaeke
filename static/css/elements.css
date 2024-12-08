@@ -6,17 +6,23 @@
   --quinaryColor: #f9c5a5;
   --senaryColor: #2a2a2a;
   --septenaryColor: #fff;
+  --priceInfo: #545454;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Albert Sans";
+  font-family: "Roboto";
   font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
   overflow-x: hidden;
   min-width: 350px;
 }
-
+h1,h2,h3 {
+  font-family: "Albert Sans";
+}
 h1 {
 font-size: 3.75rem;
 font-weight: 400;
@@ -27,11 +33,18 @@ h2,summary {
   padding: 80px 120px;
   font-size: 3rem;
   font-weight: 400;
+  line-height: 100%;
 }
 @media (max-width: 454px) {
   h2 {
     padding: 40px 60px;
   }
+}
+
+h3 {
+  font-size: 2.0625rem;
+  font-weight: 500;
+  line-height: 124%;
 }
 
 summary {
@@ -53,11 +66,6 @@ details[open] > summary::after {
   transform: rotate(45deg) 
 }
 
-h3 {
-  font-size: 2.0625rem;
-  font-weight: 500;
-  line-height: 124%;
-}
 
 ul {
   padding: 0;
