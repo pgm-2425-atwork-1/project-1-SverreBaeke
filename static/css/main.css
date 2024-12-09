@@ -1,15 +1,5 @@
-/* General elements styling
-====================================== */
-.uppercase-text {
-  text-transform: uppercase;
-}
-
-.source {
-  margin-top: 40px;
-  padding-left: 40px;
-  font-style: italic;
-}
-
+/* Containers / overlays / wrappers
+======================================= */
 .container-spacing {
   display: flex;
   flex-direction: column;
@@ -26,6 +16,13 @@
   gap: 8px;
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 40px;
+}
+
 .overlay-container {
   position: relative;
   width: 100%;
@@ -35,6 +32,57 @@
   position: absolute;
 }
 
+.link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Typography 
+======================================= */
+.text--primary {
+  color: var(--septenaryColor);
+}
+
+.text--secondary {
+  color: var(--primaryColor);
+}
+
+.link--primary {
+  color: var(--senaryColor);
+  text-decoration: underline;
+}
+
+.link--secondary {
+  color: var(--senaryColor);
+}
+
+.uppercase-text {
+  text-transform: uppercase;
+}
+
+.source {
+  margin-top: 40px;
+  padding-left: 40px;
+  font-style: italic;
+}
+
+.schedule {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+}
+
+.slashes::before,
+.slashes:after {
+  content: " / ";
+}
+
+/* List styles
+======================================= */
 .list {
   padding-left: 40px;
 }
@@ -51,77 +99,6 @@
   gap: 12px;
 }
 
-
 .list-item {
   list-style-type: square;
 }
-
-
-
-
-.text--primary {
-  color: var(--septenaryColor);
-}
-
-.text--secondary {
-  color: var(--primaryColor);
-}
-
-.image-border {
-  width: 44px;
-  height: 44px;
-  border: 2px solid black;
-  border-radius: 50%;
-  padding: 6px;
-}
-
-.text-underline {
-  text-decoration: underline;
-}
-
-.slashes::before,
-.slashes:after {
-  content: " / ";
-}
-
-
-
-.schedule {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 1.2px;
-}
-
-.link::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.link--primary {
-  color: var(--senaryColor);
-  text-decoration: underline;
-}
-
-.link--secondary {
-  color: var(--senaryColor);
-}
-
-.wrapper {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-left: 40px;
-}
-
-/* Visit styling
-============================= */
-
-
-
-
-
