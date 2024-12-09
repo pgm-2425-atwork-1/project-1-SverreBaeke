@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="static/css/elements.css">
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="stylesheet" href="static/css/header-navbar.css">
+    <link rel="stylesheet" href="static/css/hero.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -94,19 +95,18 @@
     <main id="main">
         <h1 class="hero">
             <img class="hero__image" src="static/images/stam-museum.jpeg" alt="stam museum">
-            <img class="hero__overlay-text" src="static/images/stadsmuseum-gent.svg" alt="stads museum tekst">
-            <img class="hero__overlay-text--small" src="static/images/stadsmuseum-gent-small.svg"
+            <img class="hero__overlay" src="static/images/stadsmuseum-gent.svg" alt="stads museum tekst">
+            <img class="hero__overlay hero__overlay--small" src="static/images/stadsmuseum-gent-small.svg"
                 alt="stads museum tekst">
-            <a class="image__overlay hero__arrow" href="#agenda"><img class="hero__arrow"
-                    src="static/images/arrow-down.svg" alt=""></a>
+            <a href="#agenda"><img class="hero__arrow"src="static/images/arrow-down.svg" alt=""></a>
         </h1>
 
         <section id="agenda">
             <h2>Agenda</h2>
             <div class="container-flex">
-                <article class="agenda__item agenda__item--primary">
-                    <img class="agenda__image" src="static/images/stam-museum-binnen.png" alt="binnenkant stam museum">
-                    <div class="agenda__content agenda__content--primary">
+                <article class="agenda-item agenda-item--primary">
+                    <img class="agenda-image" src="static/images/stam-museum-binnen.png" alt="binnenkant stam museum">
+                    <div class="agenda-content agenda-content--primary">
                         <h3><a class="link" href="#">Het verhaal van Gent</a></h3>
                         <p class="article__schedule">permanent</p>
                         <p class="article__text text__color--secondary">
@@ -118,12 +118,12 @@
                     </div>
                 </article>
 
-                <article class="agenda__item agenda__item--secondary">
-                    <div class="image__overlay__container">
-                        <img class="agenda__image" src="static/images/de-poorten.png" alt="Meisje in steeg">
-                        <img class="image__overlay image__overlay--agenda" src="static/images/label_2-nl-be.svg">
+                <article class="agenda-item agenda-item--secondary">
+                    <div class="overlay-container">
+                        <img class="agenda-image" src="static/images/de-poorten.png" alt="Meisje in steeg">
+                        <img class="overlay-image overlay-image--agenda" src="static/images/label_2-nl-be.svg">
                     </div>
-                    <div class="agenda__content agenda__content--secondary">
+                    <div class="agenda-content agenda-content--secondary">
                         <h3><a class="link" href="#">De Poorten - Op ‘t randje van de stad</a></h3>
                         <p class="article__schedule">29.11.2024 </p>
                         <div class="wrapper">
@@ -181,9 +181,9 @@
 
         <section class="container-flex events__container">
             <article class="event__item">
-                <div class="image__overlay__container">
+                <div class="overlay-container">
                     <img class="event__item__image" src="static/images/familie-atelier.png" alt="Meisje in atelier">
-                    <img class="image__overlay --event__overlay" src="static/images/vlieg.svg" alt="vlieg icon">
+                    <img class="overlay-image --event__overlay" src="static/images/vlieg.svg" alt="vlieg icon">
                 </div>
                 <h3><a class="link" href="#">Open familieatelier: Wat als ...</a></h3>
                 <p class="article__schedule text__color--tertiary">permanent</p>
@@ -194,9 +194,9 @@
             </article>
 
             <article class="event__item">
-                <div class="image__overlay__container">
+                <div class="overlay-container">
                     <img class="event__item__image" src="static/images/rat.png" alt="Rat met vergrootglas">
-                    <img class="image__overlay --event__overlay" src="static/images/vlieg.svg" alt="vlieg icon">
+                    <img class="overlay-image --event__overlay" src="static/images/vlieg.svg" alt="vlieg icon">
                 </div>
                 <h3><a class="link" href="#">Luisterspel 'Santé m'n Ratje'</a></h3>
                 <p class="article__schedule text__color--tertiary">permanent</p>
@@ -206,9 +206,9 @@
             </article>
 
             <article class="event__item">
-                <div class="image__overlay__container">
+                <div class="overlay-container">
                     <img class="event__item__image" src="static/images/kinderspoor.png" alt="Meisje bouwt in atelier">
-                    <img class="image__overlay --event__overlay" src="static/images/vlieg.svg" alt="vlieg icon">
+                    <img class="overlay-image --event__overlay" src="static/images/vlieg.svg" alt="vlieg icon">
                 </div>
                 <h3><a class="link" href="#">Kinderspoor door 'Het verhaal van Gent'</a></h3>
                 <p class="article__schedule text__color--tertiary">permanent</p>
@@ -268,7 +268,7 @@
             <a class="show" href="index.html"><img class="footer__top__logo" src="static/images/logo.svg"
                     alt="logo STAM"></a>
 
-            <article class="footer__item">
+            <article class="footer__item container-spacing">
                 <h2 class="footer__title">Stadsmuseum Gent</h2>
                 <ul>
                     <li>Bijlokesite</li>
@@ -282,7 +282,7 @@
                 </div>
             </article>
 
-            <article class="footer__item">
+            <article class="footer__item container-spacing">
                 <h2 class="footer__title">mis geen nieuwtjes</h2>
                 <a class="footer__button" href="#">Schrijf je in op de nieuwsbrief</a>
                 <div class="footer__socials">
