@@ -30,13 +30,13 @@
   padding: 32px 120px 32px 32px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
 .agenda-content:first-of-type {
   padding: 32px 32px 32px 120px;
 }
 }
 
-@media (max-width: 799px) {
+@media (max-width: 899px) {
   .agenda-content {
     padding: 32px;
   }
