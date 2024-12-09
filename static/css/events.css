@@ -57,3 +57,19 @@
   padding: 8px;
   border-radius: 50%;
 }
+
+/* Events section on exhibition page
+======================================= */
+.events-title {
+  padding: 80px 120px 40px 0;
+}
+
+@media (max-width: 742px) {
+  .events-title {
+    padding: 40px 0 24px;
+  }
+}
+
+.events-container--exhibition {
+  margin-top: 0;
+}

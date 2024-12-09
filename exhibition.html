@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="static/css/elements.css">
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="stylesheet" href="static/css/header-navbar.css">
+    <link rel="stylesheet" href="static/css/exhibition.css">
+    <link rel="stylesheet" href="static/css/events.css">
     <link rel="stylesheet" href="static/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,10 +97,10 @@
     <main id="main" class="exhibition-container">
         <section class="exhibition">
             <header class="exhibition__header">
-                <a class="container-flex--gap link--secondary nav-link" href="index.html#agenda"><img
+                <a class="nav-link link--secondary" href="index.html#agenda"><img
                         src="static/images/arrow-corner-top.svg" alt="">Agenda</a>
                 <h1>Wie bewaart, die blijft! Koru ve yaşat! </h1>
-                <p class="schedule text--secondary container-flex--gap">29.11.2024 <img
+                <p class="schedule text--secondary container-flex-gap">29.11.2024 <img
                         src="static/images/arrow-corner-right.svg" alt="">31.08.2025</p>
             </header>
             <article class="exhibition__content">
@@ -152,58 +154,53 @@
 
         </section>
 
-        <section>
-            <h2 class="preview">nu ook in het STAM</h2>
-            <div>
-                <section class="container-flex events__container events__container--exhibition">
-                    <article class="event-item">
-                        <div class="overlay-container">
-                            <img class="event-image" src="static/images/familie-atelier.png"
-                                alt="Meisje in atelier">
-                            <img class="overlay-image event-overlay" src="static/images/vlieg.svg" alt="vlieg icon">
-                        </div>
-                        <h3><a class="link link--secondary" href="#">Open familieatelier: Wat als ...</a></h3>
-                        <p class="schedule text--secondary">permanent</p>
-                        <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
-                            bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
-                            slag!
-                        </p>
-                    </article>
+        <h2 class="events-title">nu ook in het STAM</h2>
+        <section class="events-container events-container--exhibition">
+            <article class="event-item">
+                <div class="overlay-container">
+                    <img class="event-image" src="static/images/familie-atelier.png"alt="Meisje in atelier">
+                    <img class="overlay-image event-overlay" src="static/images/vlieg.svg" alt="vlieg icon">
+                </div>
+                <h3><a class="link link--secondary" href="#">Open familieatelier: Wat als ...</a></h3>
+                <p class="schedule text--secondary">permanent</p>
+                <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
+                    bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
+                    slag!
+                </p>
+            </article>
 
-                    <article class="event-item">
-                        <div class="overlay-container">
-                            <img class="event-image" src="static/images/kinderspoor.png"
-                                alt="Meisje bouwt in atelier">
-                            <img class="overlay-image event-overlay" src="static/images/vlieg.svg" alt="vlieg icon">
-                        </div>
-                        <h3><a class="link link--secondary" href="#">Kinderspoor door 'Het verhaal van Gent'</a></h3>
-                        <p class="schedule text--secondary">permanent</p>
-                        <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
-                            bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
-                            slag!
-                        </p>
-                    </article>
+            <article class="event-item">
+                <div class="overlay-container">
+                    <img class="event-image" src="static/images/kinderspoor.png" alt="Meisje bouwt in atelier">
+                    <img class="overlay-image event-overlay" src="static/images/vlieg.svg" alt="vlieg icon">
+                </div>
+                <h3><a class="link link--secondary" href="#">Kinderspoor door 'Het verhaal van Gent'</a></h3>
+                <p class="schedule text--secondary">permanent</p>
+                <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
+                    bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
+                    slag!
+                </p>
+            </article>
 
-                    <article class="event-item event-item--secondary">
-                        <div>
-                            <img class="event-image" src="static/images/stamplein.png" alt="stamplein">
-                        </div>
-                        <h3><a class="link link--secondary" href="#">STAMplein: De vierkante kilometer - Dampoort</a></h3>
-                        <div class="schedule text--secondary">
-                            <p>03.05.2024</p>
-                            <div class="wrapper">
-                                <img src="static/images/arrow-green.svg" alt="">
-                                <p>09.03.2024</p>
-                            </div>
-                        </div>
-                        <p>Het STAMplein is een gratis stukje museum met een wisselende programmatie. Ontdek er de
-                            schatten
-                            van
-                            de vijfde aflevering van het erfgoedproject 'De vierkante kilometer' waarbij Dampoort
-                            uitgelicht
-                            wordt.</p>
-                    </article>
-            </div>
+            <article class="event-item event-item--secondary">
+                <div>
+                    <img class="event-image" src="static/images/stamplein.png" alt="stamplein">
+                </div>
+                <h3><a class="link link--secondary" href="#">STAMplein: De vierkante kilometer - Dampoort</a></h3>
+                <div class="schedule text--secondary">
+                    <p>03.05.2024</p>
+                    <div class="wrapper">
+                        <img src="static/images/arrow-green.svg" alt="">
+                        <p>09.03.2024</p>
+                    </div>
+                </div>
+                <p>Het STAMplein is een gratis stukje museum met een wisselende programmatie. Ontdek er de
+                    schatten
+                    van
+                    de vijfde aflevering van het erfgoedproject 'De vierkante kilometer' waarbij Dampoort
+                    uitgelicht
+                    wordt.</p>
+            </article>
         </section>
     </main>
 
