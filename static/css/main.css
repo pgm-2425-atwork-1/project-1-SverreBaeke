@@ -49,15 +49,15 @@
   list-style-type: square;
 }
 
-.text__color--primary {
+.text--primary {
   color: var(--senaryColor);
 }
 
-.text__color--secondary {
+.text--secondary {
   color: var(--septenaryColor);
 }
 
-.text__color--tertiary {
+.text--tertiary {
   color: var(--primaryColor);
 }
 
@@ -90,19 +90,11 @@
   }
 }
 
-.article__schedule {
+.schedule {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 1.2px;
-}
-
-.article__text {
-  font-family: Roboto;
-  font-size: 1.1875rem;
-  font-weight: 400;
-  line-height: 140%;
-  margin: 24px 0;
 }
 
 .link::after {
@@ -134,51 +126,6 @@
 /* Agenda section
 ========================================== */
 
-.agenda-item {
-  position: relative;
-  flex: 1 1 450px;
-}
-
-.image-overlay--agenda {
-  bottom: 24px;
-  left: 24px;
-}
-
-@media (max-width: 460px) {
-  .image-overlay--agenda {
-    width: 200px;
-  }
-}
-.agenda-item--secondary {
-  background-color: var(--primaryColor);
-}
-
-.agenda-item--primary {
-  background-color: var(--secondaryColor);
-}
-
-.agenda-image {
-  width: 100%;
-  object-fit: cover;
-}
-.agenda-content {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.agenda-content--primary {
-  padding: 32px 32px 32px 120px;
-}
-.agenda-content--secondary {
-  padding: 32px 120px 32px 32px;
-}
-
-@media (max-width: 799px) {
-  .agenda-content {
-    padding: 32px;
-  }
-}
 
 /* highlight section
 ================================== */
