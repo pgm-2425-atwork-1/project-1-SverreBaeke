@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="static/css/elements.css">
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="stylesheet" href="static/css/header-navbar.css">
+    <link rel="stylesheet" href="static/css/visit.css">
     <link rel="stylesheet" href="static/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,34 +52,34 @@
             <img class="hamburger-icon" src="static/images/hamburger-black.svg" alt="" id="hamburger">
         </nav>
 
-        <nav id="dropdown" class="dropdown">
+        <nav id="dropdown" class="dropdown navbar--quarternary ">
             <ul class="dropdown__list">
                 <li>
                     <a class="nav-link nav-link--dropdown" href="exhibition.html">
                         Agenda
-                        <img class="link-icon" src="static/images/arrow-corner-bottom.svg" alt="">
+                        <img class="link-icon" src="static/images/arrow-black.svg" alt="">
                     </a>
                 </li>
                 <li>
                     <a class="nav-link nav-link--dropdown" href="history.html">
                         Historiek
-                        <img class="link-icon" src="static/images/arrow-corner-bottom.svg" alt="">
+                        <img class="link-icon" src="static/images/arrow-black.svg" alt="">
                     </a>
                 </li>
                 <li>
                     <a class="nav-link nav-link--dropdown" href="visit.html">
                         Bezoek
-                        <img class="link-icon" src="static/images/arrow-corner-bottom.svg" alt="">
+                        <img class="link-icon" src="static/images/arrow-black.svg" alt="">
                     </a>
                 </li>
                 <li>
                     <a class="nav-link nav-link--dropdown" href="about.html">
                         Over het stam
-                        <img class="link-icon" src="static/images/arrow-corner-bottom.svg" alt="">
+                        <img class="link-icon" src="static/images/arrow-black.svg" alt="">
                     </a>
                 </li>
             </ul>
-            <button type="button" class="dropdown__button" id="dropdown-button">+</button>
+            <button type="button" class="dropdown__button dropdown__button--secondary" id="dropdown-button">+</button>
         </nav>
         <div class="filler" id="filler"></div>
         
@@ -101,7 +102,7 @@
         <section class="visit-content">
             <div class="visit-column container-spacing">
                 <article class="visit-item container-spacing" >
-                    <h2>Adres</h2>
+                    <h2 class="visit-title">Adres</h2>
                     <ul class=>
                         <li>STAM - Stadsmuseum Gent</li>
                         <li>Bijlokesite</li>
@@ -116,16 +117,16 @@
                     </ul>
                 </article>
 
-                <article class="visit-item">
-                    <h2>Contact</h2>
-                    <ul class="container-spacing">
+                <article class="visit-item container-spacing">
+                    <h2 class="visit-title">Contact</h2>
+                    <ul>
                         <li><a class="link--primary" href="mailto:info@stamgent.be">info@stamgent.be</a></li>
                         <li><a class="link--primary" href="tel:+32 (0)9 267 14 00">+32 (0)9 267 14 00</a></li>
                     </ul>
                 </article>
 
                 <article class="visit-item container-spacing">
-                    <h2>Openingstijden</h2>
+                    <h2 class="visit-title">Openingstijden</h2>
                     <table>
                         <tbody>
                             <tr>
@@ -165,7 +166,7 @@
             </div>
             <div class="visit-column">
                 <article class="visit-item container-spacing">
-                    <h2>Toegangsprijzen</h2>
+                    <h2 class="visit-title">Toegangsprijzen</h2>
 
                     <table>
                         <tbody>
@@ -227,7 +228,7 @@
                                         tijdens de Gentse Feesten
                                     </span>
 
-                                    <ul class="prize-info-list">
+                                    <ul class="prize-list">
                                         <li class="list-item">
                                             <a class="link--primary" href="https://visit.gent.be/nl/goed-om-weten/praktische-info/citycard-gent">
                                             CityCard Gent</a>

@@ -1,0 +1,58 @@
+.visit-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 842px;
+  width: 95%;
+  margin: 80px auto;
+  gap: 40px;
+}
+
+.visit-header {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.visit-title {
+  padding: 0;
+}
+
+.visit-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.visit-column {
+  flex: 1 1 40%;
+}
+.visit-item {
+  margin-top: 64px;
+  border-top: 1px solid black;
+}
+
+.visit-item:nth-child(1),
+.visit-item:nth-child(4) {
+  margin-top: 0;
+}
+
+.text-spacing {
+  margin: 24px 0;
+}
+
+.prize-info {
+  display: block;
+  color: var(--priceInfo);
+}
+
+.price-link {
+  color: var(--priceInfo);
+  text-decoration: underline;
+}
+
+.prize-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+}
