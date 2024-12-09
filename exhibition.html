@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="static/css/elements.css">
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="stylesheet" href="static/css/header-navbar.css">
+    <link rel="stylesheet" href="static/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -208,7 +209,7 @@
 
     <footer class="footer">
         <div class="footer__top">
-            <a class="hidden" href="index.html"><img class="footer__top__logo" src="static/images/logo.svg"
+            <a class="show" href="index.html"><img class="footer__logo" src="static/images/logo.svg"
                     alt="logo STAM"></a>
 
             <article class="footer__item container-spacing">
@@ -219,17 +220,17 @@
                     <li>09 267 14 00</li>
                     <li>info@stamgent.be</li>
                 </ul>
-                <div class="wrapper wrapper--footer__top">
-                    <a href="#"><img src="static/images/logo-vlaanderen.png" alt="logo vlaanderen"></a>
-                    <a href="#"><img src="static/images/logo-gent.png" alt="logo gent"></a>
-                </div>
+                <ul class="list-flex">
+                    <li><a href="#"><img src="static/images/logo-vlaanderen.png" alt="logo vlaanderen"></a></li>
+                    <li><a href="#"><img src="static/images/logo-gent.png" alt="logo gent"></a></li>
+                </ul>
             </article>
 
             <article class="footer__item container-spacing">
                 <h2 class="footer__title">mis geen nieuwtjes</h2>
                 <a class="footer__button" href="#">Schrijf je in op de nieuwsbrief</a>
                 <div class="footer__socials">
-                    <a href="index.html"><img class="footer__item__logo" src="static/images/logo.svg"
+                    <a href="index.html"><img class="item-logo" src="static/images/logo.svg"
                             alt="logo STAM"></a>
                     <ul class="list-flex">
                         <li><a href="#"><img class="image-border" src="static/images/facebook.svg"
@@ -249,28 +250,28 @@
                     </ul>
                 </div>
                 <ul class="list-flex">
-                    <li><a class="footer__link text-underline" href="#">Nederlands</a></li>
-                    <li><a class="footer__link slashes" href="#">Français</a></li>
-                    <li><a class="footer__link" href="#">English</a></li>
+                    <li><a class="link--primary" href="#">Nederlands</a></li>
+                    <li><a class="link--secondary slashes" href="#">Français</a></li>
+                    <li><a class="link--secondary" href="#">English</a></li>
                 </ul>
             </article>
         </div>
 
         <div class="footer__bottom">
-            <div class="footer__bottom__content">
-                <p class="footer__bottom__text">© STAM alle rechten voorbehouden</p>
-                <ul class="footer__list">
+            <div class="footer-content">
+                <p class="text--primary">© STAM alle rechten voorbehouden</p>
+                <ul class="footer-list">
                     <li><a href="#">Privacybeleid</a></li>
                     <li><a href="#">Colofon</a></li>
                     <li><a href="#">Disclaimer</a></li>
                     <li><a href="#">Algemene voorwaarden & bewaking</a></li>
                 </ul>
-                <div class="footer__bottom__wrapper">
-                    <img class="footer__bottom__img" src="static/images/heritage_logo_rotated.svg"
+                <div class="footer-wrapper">
+                    <img class="footer-image" src="static/images/heritage_logo_rotated.svg"
                         alt="erfgoedcel logo">
                     <div class="wrapper">
-                        <p class="footer__bottom__text">made by</p>
-                        <a href="https://glue.be/" target="_blank"><img class="footer__bottom__img"
+                        <p class="text--primary">made by</p>
+                        <a href="https://glue.be/" target="_blank"><img class="footer-image"
                                 src="static/images/glue.svg" alt="glue logo"></a>
                     </div>
                 </div>
