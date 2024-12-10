@@ -17,13 +17,13 @@ html {
 }
 body {
   font-family: "Roboto";
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-style: normal;
   color: var(--senaryColor);
   font-weight: 400;
   line-height: 140%;
   overflow-x: hidden;
-  min-width: 350px;
+  min-width: 21.875rem;
 }
 
 /* Headers styling
@@ -38,14 +38,14 @@ line-height: 100%;
 }
 
 h2,summary {
-  padding: 80px 120px;
+  padding: 5rem 7.5rem;
   font-size: 2.8rem;
   font-weight: 400;
   line-height: 100%;
 }
 @media (max-width: 454px) {
   h2 {
-    padding: 40px 60px;
+    padding: 2.5rem 3.75rem;
   }
 }
 
@@ -89,12 +89,12 @@ iframe {
 details {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 }
 summary {
   display: flex;
   justify-content: space-between;
-  padding: 16px 0;
+  padding: 1rem 0;
   border-top: 1px solid black;
 }
 
@@ -122,7 +122,7 @@ td:nth-child(even){
 }
 
 td {
-  padding: 8px 0;
+  padding: .5rem 0;
 }
 tr:not(:last-child) {
   border-bottom: 1px solid;

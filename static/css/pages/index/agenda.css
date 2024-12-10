@@ -1,6 +1,6 @@
 .agenda-item {
   position: relative;
-  flex: 1 1 450px;
+  flex: 1 1 28.125rem;
   background-color: var(--secondaryColor);
 }
 
@@ -14,30 +14,30 @@
   }
 
 .overlay-image--agenda {
-  bottom: 24px;
-  left: 24px;
+  bottom: 1.5rem;
+  left: 1.5rem;
 }
 @media (max-width: 460px) {
   .overlay-image--agenda {
-    width: 200px;
+    width: 12.5rem;
   }
 }
 
 .agenda-content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 32px 120px 32px 32px;
+  gap: 1rem;
+  padding: 2rem 7.5rem 2rem 2rem;
 }
 
 @media (min-width: 900px) {
 .agenda-content:first-of-type {
-  padding: 32px 32px 32px 120px;
+  padding: 2rem 2rem 2rem 7.5rem;
 }
 }
 
 @media (max-width: 899px) {
   .agenda-content {
-    padding: 32px;
+    padding: 2rem;
   }
 }

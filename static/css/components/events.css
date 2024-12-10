@@ -2,18 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  margin: 60px auto 120px;
-  max-width: 1272px;
+  margin: 3.75rem auto 7.5rem;
+  max-width: 79.5rem;
 }
 
 .event-item {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
   border-top: 1px solid black;
   flex-basis: 33.3333%;
-  padding: 16px;
+  padding: 1rem;
 }
 @media (max-width: 767px) {
   .event-item {
@@ -49,24 +49,24 @@
 }
 
 .event-overlay {
-  top: 32px;
-  left: 32px;
-  width: 48px;
-  height: 48px;
+  top: 2rem;
+  left: 2rem;
+  width: 3rem;
+  height: 3rem;
   background-color: white;
-  padding: 8px;
+  padding: .5rem;
   border-radius: 50%;
 }
 
 /* Events section on exhibition page
 ======================================= */
 .events-title {
-  padding: 80px 120px 40px 0;
+  padding: 5rem 7.5rem 2.5rem 0;
 }
 
 @media (max-width: 742px) {
   .events-title {
-    padding: 40px 0 24px;
+    padding: 2.5rem 0 1.5rem;
   }
 }
 

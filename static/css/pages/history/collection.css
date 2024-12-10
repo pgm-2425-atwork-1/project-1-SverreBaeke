@@ -5,18 +5,18 @@
 .collection__title {
   border-bottom: 1px solid white;
   color: white;
-  padding: 16px 120px;
+  padding: 1rem 7.5rem;
 }
 @media (max-width: 627px) {
   .collection__title {
-    padding: 16px 16px;
+    padding: 1rem 1rem;
   }
 }
 
 .collection__items {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 120px;
+  padding: 0 7.5rem;
 }
 
 @media (max-width: 768px) {
@@ -32,9 +32,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 20px;
+  gap: 1.25rem;
   flex-basis: 25%;
-  padding: 30px;
+  padding: 1.875rem;
   border-right: 1px solid white;
 }
 @media (max-width: 958px) {

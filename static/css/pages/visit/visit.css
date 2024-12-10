@@ -1,16 +1,16 @@
 .visit-container {
   display: flex;
   flex-direction: column;
-  max-width: 842px;
+  max-width: 52.625rem;
   width: 95%;
-  margin: 80px auto;
-  gap: 40px;
+  margin: 5rem auto;
+  gap: 2.5rem;
 }
 
 .visit-header {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .visit-title {
@@ -20,14 +20,14 @@
 .visit-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .visit-column {
   flex: 1 1 40%;
 }
 .visit-item {
-  margin-top: 64px;
+  margin-top: 4rem;
   border-top: 1px solid black;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .text-spacing {
-  margin: 24px 0;
+  margin: 1.5rem 0;
 }
 
 .prize-info {
@@ -53,6 +53,6 @@
 .prize-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 10px;
+  gap: .75rem;
+  padding: .625rem;
 }

@@ -16,8 +16,8 @@
 }
 
 .hero__overlay {
-  bottom: 30px;
-  left: 30px;
+  bottom: 1.875rem;
+  left: 1.875rem;
   position: absolute;
 }
 @media (max-width: 1175px) {
@@ -36,13 +36,13 @@
 }
 
 .hero__arrow {
-  bottom: 30px;
-  right: 30px;
-  width: 50px;
+  bottom: 1.875rem;
+  right: 1.875rem;
+  width: 3.125rem;
   position: absolute;
 }
 @media (max-width: 1175px) {
   .hero__arrow {
-    width: 20px;
+    width: 1.25rem;
   }
 }

@@ -1,14 +1,14 @@
 .about-container {
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
-  max-width: 842px;
+  row-gap: 2.5rem;
+  max-width: 52.625rem;
   width: 95%;
-  margin: 100px auto 20px;
+  margin: 6.25rem auto 1.25rem;
 }
 
 .about-margin {
-  margin: 40px 0;
+  margin: 2.5rem 0;
 }
 
 .about-title {
@@ -16,5 +16,5 @@
   font-weight: 500;
   line-height: 124%;
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }

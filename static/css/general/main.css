@@ -3,7 +3,7 @@
 .container-spacing {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .container-flex {
@@ -13,14 +13,14 @@
 
 .container-flex-gap {
   display: flex;
-  gap: 8px;
+  gap: .5rem;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-left: 40px;
+  gap: .5rem;
+  margin-left: 2.5rem;
 }
 
 .overlay-container {
@@ -64,8 +64,8 @@
 }
 
 .source {
-  margin-top: 40px;
-  padding-left: 40px;
+  margin-top: 2.5rem;
+  padding-left: 2.5rem;
   font-style: italic;
 }
 
@@ -73,7 +73,7 @@
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 100%;
-  letter-spacing: 1.2px;
+  letter-spacing: .075rem;
 }
 
 .slashes::before,
@@ -84,19 +84,19 @@
 /* List styles
 ======================================= */
 .list {
-  padding-left: 40px;
+  padding-left: 2.5rem;
 }
 
 .list-flex {
   display: flex;
   padding: 0;
-  gap: 10px;
+  gap: .625rem;
 }
 
 .list-gap {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: .75rem;
 }
 
 .list-item {

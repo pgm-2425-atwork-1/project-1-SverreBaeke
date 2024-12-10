@@ -9,22 +9,22 @@
 
 .sidenav {
   position: sticky;
-  height: 200px;
-  width: 300px;
-  top: 174px;
+  height: 12.5rem;
+  width: 18.75rem;
+  top: 10.875rem;
   left: 0;
   display: flex;
-  padding: 24px;
-  margin-bottom: 50px;
+  padding: 1.5rem;
+  margin-bottom: 3.125rem;
   justify-content: flex-end;
   border-right: 1px solid black;
 }
 
 @media (max-width: 768px) {
   .sidenav {
-    top: 49px;
+    top: 3.0625rem;
     justify-content: flex-start;
-    width: calc(100% - 53px);
+    width: calc(100% - 3.3125rem);
     border-right: none;
   }
 }
@@ -39,11 +39,11 @@
 .history-container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  max-width: 966px;
+  gap: 2.5rem;
+  max-width: 60.375rem;
   width: 95%;
-  margin: 80px 80px 56px 0;
-  padding-left: 40px;
+  margin: 5rem 5rem 3.5rem 0;
+  padding-left: 2.5rem;
 }
 
 .history-title {
@@ -55,13 +55,13 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .history-text {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
   flex: 1 1 50%;
 }
 
