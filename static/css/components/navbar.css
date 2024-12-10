@@ -57,6 +57,10 @@
   transform: rotate(45deg);
 }
 
+.nav-link:hover {
+  text-decoration: underline 1px;
+}
+
 .link-icon {
   width: .875rem;
 }
@@ -97,6 +101,14 @@
   padding: .5938rem 1.5rem;
   height: 100%;
   line-height: 1;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .action {
+    font-size: 1rem;
+  }
 }
 
 .action--primary {

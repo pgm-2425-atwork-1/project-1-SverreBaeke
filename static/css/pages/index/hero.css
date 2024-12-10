@@ -1,6 +1,7 @@
 .hero {
   height: 91vh;
   position: relative;
+ overflow: hidden;
 }
 @media (max-width: 768px) {
   .hero {
@@ -11,9 +12,25 @@
 .hero__image {
   width: 100%;
   height: 100%;
+  scale: 1.3;
   object-fit: cover;
-  object-position: 20% 50%;
+  animation: slide 15s linear infinite;
 }
+
+@keyframes slide {
+  0% {transform: translateX(10%);}
+
+  100% {transform: translateX(0%);}
+}
+
+@media(max-width: 784px) {
+@keyframes slide {
+  0% {object-position: 0% 50%;}
+
+  100% {object-position: 50% 50%;}
+}}
+
+
 
 .hero__overlay {
   bottom: 1.875rem;
